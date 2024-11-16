@@ -1557,15 +1557,20 @@ class IMDbSetup(Screen, ConfigListScreen):
 
 def eventinfo(session, eventName="", **kwargs):
 	if not eventName:
-		s = session.nav.getCurrentService()
-		if s:
-			info = s.info()
-			event = info.getEvent(0)  # 0 = now, 1 = next
-			eventName = event and event.getEventName() or ''
+		service = session.nav.getCurrentService()
+		if service:
+			info = service.info()
+			event = info and info.getEvent(0)  # 0 = now, 1 = next
+			eventName = event and event.getEventName() or ""
 	session.open(IMDB, eventName)
 
 
 def main(session, eventName="", **kwargs):
+	service = session.nav.getCurrentService()
+	if service:
+		info = service.info()
+		event = info and info.getEvent(0)  # 0 = now, 1 = next
+		eventName = event and event.getEventName() or ""
 	session.open(IMDB, eventName)
 
 
@@ -1583,16 +1588,19 @@ def movielistSearch(session, serviceref, **kwargs):
 		eventName = re.sub(r"[\W_]+", ' ', root, 0)
 	session.open(IMDB, eventName)
 
+
 def channelSearch(session, service=None, **kwargs):
 	serviceHandler = eServiceCenter.getInstance()
 	info = serviceHandler.info(service)
 	event = info.getEvent(service)
 	if event:
-		name = info and event.getEventName() or ''
+		name = info and event.getEventName() or ""
 		session.open(IMDB, name)
+
 
 def furtherSearch(session, selectedevent, **kwargs):
 	session.open(IMDB, selectedevent[0].getEventName())
+
 
 pluginlist = (
 	(
@@ -1640,7 +1648,7 @@ pluginlist = (
 	(
 		config.plugins.imdb.showinfurtheroptions,
 		PluginDescriptor(
-			name=_("IMDb search"),
+			name=_("Search event in IMDb"),
 			description=_("IMDb search"),
 			where=PluginDescriptor.WHERE_EVENTINFO,
 			fnc=furtherSearch,
@@ -1652,11 +1660,11 @@ pluginlist = (
 
 def Plugins(**kwargs):
 	l = [PluginDescriptor(name=_("IMDb search") + "...",
-						  description=_("Search for details from the Internet Movie Database"),
-						  where=PluginDescriptor.WHERE_EVENTINFO,
-						  fnc=eventinfo,
-						  needsRestart=False,
-						  )]
+		description=_("Search for details from the Internet Movie Database"),
+		where=PluginDescriptor.WHERE_EVENTINFO,
+		fnc=eventinfo,
+		needsRestart=False,
+		)]
 
 	l += [pl[1] for pl in pluginlist if pl[0].value]
 
