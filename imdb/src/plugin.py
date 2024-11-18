@@ -19,9 +19,9 @@ from Screens.HelpMenu import HelpableScreen
 from Screens.InfoBar import MoviePlayer
 from Screens.Screen import Screen
 from Screens.VirtualKeyBoard import VirtualKeyBoard
-from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS
+from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS, isPluginInstalled
 
-from enigma import ePicLoad, eServiceCenter
+from enigma import ePicLoad, eServiceCenter, eServiceReference
 from html import entities
 from shutil import copy
 from six.moves.urllib.parse import quote_plus
@@ -212,6 +212,7 @@ class IMDB(Screen, HelpableScreen):
 		eventName = ' '.join(eventName.split()).strip()
 
 		self.eventName = eventName
+		self.originalName = ""
 
 		self.callbackNeeded = callbackNeeded
 		self.callbackData = ""
@@ -220,7 +221,6 @@ class IMDB(Screen, HelpableScreen):
 		# Always enable saving.
 		# self.saving = save
 		self.saving = True
-		self.savingpath = savepath or "/home/root/logs/imdb"
 		self.savingpath = savepath or "/home/root/logs/imdb"
 		self.localpath = localpath
 
@@ -267,6 +267,8 @@ class IMDB(Screen, HelpableScreen):
 		# 3 = synopsis page
 		# 4 = reviews page
 		self.Page = 0
+
+		self.Pig = "Pig.Pig" in str(self.renderer)
 
 		self.cookie = {
 			"lc-main": language.getLanguage(),
@@ -325,6 +327,7 @@ class IMDB(Screen, HelpableScreen):
 		self.ratingstars = -1
 		self.reviews = []
 		self.spoilers = False
+		self.originalName = ""
 
 	def pageUp(self):
 		if self.hideBigPoster():
@@ -365,7 +368,7 @@ class IMDB(Screen, HelpableScreen):
 			self["detailslabel"].setText(_("Please select the matching entry"))
 			self["detailslabel"].show()
 			self["key_blue"].setText("")
-			self["key_green"].setText(_("Title Menu"))
+			self["key_green"].setText("")
 			self["key_yellow"].setText(_("Details"))
 			self["VKeyIcon"].boolean = False
 			self.Page = 0
@@ -546,6 +549,8 @@ class IMDB(Screen, HelpableScreen):
 		self["ratinglabel"].show()
 		self["castlabel"].show()
 		self["detailslabel"].show()
+		self["key_green"].setText(_("Title Menu"))
+		self["key_yellow"].setText("")
 
 		if self.resultlist and self.Page == 0:
 			title, titleId = self["menu"].getCurrent()
@@ -568,11 +573,14 @@ class IMDB(Screen, HelpableScreen):
 
 		if self.Page == 0 or (not synopsis and not self.extra):
 			return
+		self["key_green"].setText(_("Title Menu"))
+		self["key_yellow"].setText(_("Details"))
+		self["key_blue"].setText("")
 		if self.Page == 1:
 			self["extralabel"].show()
 			self["detailslabel"].hide()
 			self["castlabel"].hide()
-			self["poster"].hide()
+			self.Pig and self["poster"].hide()
 			self["stars"].hide()
 			self["starsbg"].hide()
 			self["ratinglabel"].hide()
@@ -638,8 +646,22 @@ class IMDB(Screen, HelpableScreen):
 				))
 				keys += ["2", "3", "4"]
 
+		if isPluginInstalled("TMBD"):
+			list.append((_("Play YT trailer"), self.openYttrailer))
+			keys += [str(len(keys) + 1)]
+			list.append((_("Search YT trailer"), self.searchYttrailer))
+			keys += [str(len(keys) + 1)]
+
+		if isPluginInstalled("SubsSupport"):
+			list.append((_("SubsSupport search"), self.searchSubsSupport))
+			keys += [str(len(keys) + 1)]
+
 		list.append((_("Setup"), self.setup))
 		keys += ["menu"]
+
+		for video in self.videos:
+			list.append((video[0], self.playVideo, video[1], video[2]))
+
 
 		self.session.openWithCallback(
 			self.menuCallback,
@@ -650,7 +672,13 @@ class IMDB(Screen, HelpableScreen):
 		)
 
 	def menuCallback(self, ret=None):
-		ret and ret[1]()
+		if ret:
+			ret[1]() if len(ret) == 2 else ret[1](ret[2], ret[3])
+
+	def playVideo(self, name, url):
+		ref = eServiceReference(4097, 0, url)
+		ref.setName(name)
+		self.session.open(IMDbPlayer, ref)
 
 	def saveHtmlDetails(self):
 		try:
@@ -723,24 +751,43 @@ class IMDB(Screen, HelpableScreen):
 
 	def openYttrailer(self):
 		try:
-			from Plugins.Extensions.YTTrailer.plugin import YTTrailer, baseEPGSelection__init__
-		except ImportError as ie:
-			pass
-		if baseEPGSelection__init__ is None:
+			from Plugins.Extensions.TMBD import tmbdYTTrailer
+		except:
+			self["statusbar"].setText(_("YT trailer import failed"))
 			return
 
-		ytTrailer = YTTrailer(self.session)
-		ytTrailer.showTrailer(self.eventName)
+		try:
+			ytTrailer = tmbdYTTrailer.tmbdYTTrailer(self.session)
+			ytTrailer.showTrailer(self.eventName)
+		except:
+			self["statusbar"].setText(_("YT trailer play failed"))
 
 	def searchYttrailer(self):
 		try:
-			from Plugins.Extensions.YTTrailer.plugin import YTTrailerList, baseEPGSelection__init__
-		except ImportError as ie:
-			pass
-		if baseEPGSelection__init__ is None:
+			from Plugins.Extensions.TMBD import tmbdYTTrailer
+		except:
+			self["statusbar"].setText(_("YT trailer import failed"))
+			return
+		try:
+			self.session.open(tmbdYTTrailer.TmbdYTTrailerList, self.eventName)
+		except:
+			self["statusbar"].setText(_("YT trailer search failed"))
+
+	def searchSubsSupport(self):
+		try:
+			from Plugins.Extensions.SubsSupport.subtitles import E2SubsSeeker, SubsSearch, initSubsSettings
+		except:
+			self["statusbar"].setText(_("SubsSupport import failed"))
 			return
 
-		self.session.open(YTTrailerList, self.eventName)
+		settings = initSubsSettings().search
+		titles = [self.eventName]
+		if self.originalName and self.originalName != self.eventName:
+			titles.append(self.originalName)
+		try:
+			self.session.open(SubsSearch, E2SubsSeeker(self.session, settings), settings, searchTitles=titles, standAlone=True)
+		except:
+			self["statusbar"].setText(_("SubsSupport search failed"))
 
 	def openVirtualKeyBoard(self):
 		self.session.openWithCallback(
@@ -958,7 +1005,6 @@ class IMDB(Screen, HelpableScreen):
 			self.originalName = get(fold, ('originalTitleText', 'text'))
 			self.titleId = get(fold, 'id')
 
-			self["key_yellow"].setText(_("Details"))
 			self["statusbar"].setText(_("IMDb Details parsed"))
 
 			# "formatted-duration-duration": "{value} {unit}",
