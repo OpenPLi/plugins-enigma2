@@ -318,11 +318,6 @@ class AutoTimer:
 
 		# Workaround to allow search for umlauts if we know the encoding
 		match = timer.match.replace('\xc2\x86', '').replace('\xc2\x87', '')
-		#if timer.encoding != 'UTF-8':
-		#	try:
-		#		match = match.decode('UTF-8').encode(timer.encoding)
-		#	except:
-		#		pass
 
 		self.isIPTV = bool([service for service in timer.services if "%3a//" in service])
 
