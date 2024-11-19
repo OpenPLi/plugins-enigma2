@@ -691,7 +691,7 @@ class AutoTimerEditor(Screen, ConfigListScreen, AutoTimerEditorBase):
 			))
 
 		list.extend((
-			getConfigListEntry(_("EPG encoding"), self.encoding),
+			#getConfigListEntry(_("EPG encoding"), self.encoding),
 			getConfigListEntry(_("Search type"), self.searchType),
 			getConfigListEntry(_("Search strictness"), self.searchCase),
 			getConfigListEntry(_("Timer type"), self.justplay),
