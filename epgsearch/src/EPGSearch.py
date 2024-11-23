@@ -1271,11 +1271,10 @@ class EPGSearchHistory(Screen):
 			def delete_item(answer=False):
 				if answer:
 					index = self["history"].getSelectedIndex()
-					history = self["history"].list
-					new_history = history[:index] + history[index + 1:]
-					self["history"].setList(new_history)
-					config.plugins.epgsearch.history.value = new_history
+					self["history"].removeEntry(index)
+					config.plugins.epgsearch.history.value = self["history"].list
 			text = _("Delete text '%s' from history?") % item
 			self.session.openWithCallback(delete_item, MessageBox, text, type=MessageBox.TYPE_YESNO, default=False)
+
 	def exit(self):
 		self.close(False)
