@@ -95,7 +95,7 @@ msgid "Export selected as AutoTimer"
 msgstr "Экспорт выбранного как Автотаймер"
 
 msgid "Delete text '%s' from history?"
-msgstr ""
+msgstr "Удалить текст «'%s' из истории?"
 
 msgid "History"
 msgstr "История"
@@ -193,9 +193,8 @@ msgstr "Выберите действие:"
 msgid "Select channel"
 msgstr "Выбор канала"
 
-#, fuzzy
 msgid "Select item for search and press 'OK' or edit item with yellow button or delete item with blue button."
-msgstr "Выберите элемент для поиска и нажмите 'OK' или отредактируйте элемент с помощью желтой кнопки."
+msgstr "Выберите элемент для поиска и нажмите 'OK' или отредактируйте элемент с помощью желтой кнопки или удалить элемент с помощью синей кнопки."
 
 msgid "Select type for filter search. Press button P +/- for show/hide filter in description after search."
 msgstr "Выберите тип поиска для фильтра. Нажмите P +/- ,что бы показать/скрыть фильтр в описании сервисов, после успешного поиска."
