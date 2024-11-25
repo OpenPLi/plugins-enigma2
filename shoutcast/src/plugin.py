@@ -440,6 +440,9 @@ class SHOUTcastWidget(Screen):
 				args.append('-s')
 			if config.plugins.shoutcast.addsequenceoutputfile.value:
 				args.append('-q')
+			args.append('-u')
+			args.append('WinampMPEG/5.63')
+			args.append('--codeset-metadata=UTF-8')
 			if not fileExists(self.STREAMRIPPER_BIN):
 				self.session.open(MessageBox, _("streamripper not installed!"), MessageBox.TYPE_ERROR, timeout=10)
 				return
