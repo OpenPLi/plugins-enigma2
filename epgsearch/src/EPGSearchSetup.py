@@ -13,7 +13,7 @@ from Components.config import config
 from . import _
 
 
-class EPGSearchSetup(ConfigListScreen, Screen):
+class EPGSearchSetup(Screen, ConfigListScreen):
 	skin = """<screen name="EPGSearchSetup" position="center,center" size="585,420">
 		<ePixmap pixmap="skin_default/buttons/red.png" position="0,0" size="140,40" alphatest="on" />
 		<ePixmap pixmap="skin_default/buttons/green.png" position="140,0" size="140,40" alphatest="on" />
@@ -34,7 +34,6 @@ class EPGSearchSetup(ConfigListScreen, Screen):
 				(_("Add \"Search\" Button to EPG"), config.plugins.epgsearch.add_search_to_epg, _("If this setting is enabled, the plugin adds a \"Search\" Button to the regular EPG.")),
 				(_("Type blue Button"), config.plugins.epgsearch.type_button_blue, _("Select type: 'Search and Select channel' or 'Search'.")),
 				(_("Use Picons"), config.plugins.epgsearch.picons, _("If this setting is enabled, the plugin adds picons.")),
-				(_("Encoding Search to EPG"), config.plugins.epgsearch.encoding, _("Choosing an encoding. \"UTF-8\" to search for EPG cyrillic.")),
 				(_("Search type"), config.plugins.epgsearch.search_type, _("Select type for search, \"partial match\" for the most extensive search, \"partial description\" for the most description search.")),
 				(_("Search strictness"), config.plugins.epgsearch.search_case, _("Select whether or not you want to enforce case correctness.")),
 				(_("Add \"Search event in EPG\" to event menu"), config.plugins.epgsearch.show_in_furtheroptionsmenu, _("Adds \"Search event in EPG\" item into the event menu (needs restart GUI)")),
@@ -51,7 +50,7 @@ class EPGSearchSetup(ConfigListScreen, Screen):
 		self["config"].onSelectionChanged.append(self.updateHelp)
 
 		# Initialize widgets
-		self["key_green"] = StaticText(_("OK"))
+		self["key_green"] = StaticText(_("Save"))
 		self["key_red"] = StaticText(_("Cancel"))
 		self["help"] = StaticText()
 		self.prev_add_search_to_epg = config.plugins.epgsearch.add_search_to_epg.value
@@ -59,8 +58,7 @@ class EPGSearchSetup(ConfigListScreen, Screen):
 		# Define Actions
 		self["actions"] = ActionMap(["SetupActions"], {
 			"cancel": self.keyCancel,
-			"save": self.save,
-			"ok": self.save
+			"save": self.save
 		}, -2)
 
 	def updateHelp(self):

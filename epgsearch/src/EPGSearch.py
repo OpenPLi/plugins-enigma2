@@ -58,26 +58,23 @@ def GetCaseMap():
 
 
 try:
-	from Plugins.Extensions.Partnerbox.PartnerboxEPGList import \
-			isInRemoteTimer, getRemoteClockPixmap
-	from Plugins.Extensions.Partnerbox.plugin import \
-			showPartnerboxIconsinEPGList
+	from Plugins.Extensions.Partnerbox.PartnerboxEPGList import isInRemoteTimer, getRemoteClockPixmap
+	from Plugins.Extensions.Partnerbox.plugin import showPartnerboxIconsinEPGList
 	PartnerBoxIconsEnabled = showPartnerboxIconsinEPGList()
-except ImportError:
+except:
 	PartnerBoxIconsEnabled = False
 
 try:
 	from Plugins.Extensions.Partnerbox.PartnerboxEPGList import getRemoteClockZapPixmap
 	from Plugins.Extensions.Partnerbox.plugin import showPartnerboxZapRepIconsinEPGList
 	PartnerBoxZapRepIcons = showPartnerboxZapRepIconsinEPGList()
-except ImportError:
+except:
 	PartnerBoxZapRepIcons = False
 
 try:
-	from Plugins.Extensions.AutoTimer.AutoTimerEditor import \
-			addAutotimerFromEvent, addAutotimerFromSearchString
+	from Plugins.Extensions.AutoTimer.AutoTimerEditor import addAutotimerFromEvent, addAutotimerFromSearchString
 	autoTimerAvailable = True
-except ImportError:
+except:
 	autoTimerAvailable = False
 
 BouquetChannelListList = None
@@ -144,35 +141,37 @@ class EPGSearchList(EPGList):
 		else:
 			return None
 
-	def isInTimer(self, eventid, begin, duration, service):
+	def isInTimer(self, eventid, begin, duration, service, disabledTimers=False):
 		returnValue = None
-		type = 0
-		time_match = 0
 		bt = None
 		check_offset_time = not config.recording.margin_before.value and not config.recording.margin_after.value
 		end = begin + duration
 		refstr = ':'.join(service.split(':')[:11])
-		for x in self.timer.timer_list:
+		timersList = self.timer.timer_list[:]
+		for x in timersList:
+			if disabledTimers and not x.disabled:
+				continue
 			check = ':'.join(x.service_ref.ref.toString().split(':')[:11]) == refstr
 			if check:
+				time_match = type = type_offset = 0
 				timer_end = x.end
 				timer_begin = x.begin
-				type_offset = 0
-				if not x.repeated and check_offset_time:
+				timer_repeat = x.repeated
+
+				if not timer_repeat and check_offset_time:
 					if 0 < end - timer_end <= 59:
 						timer_end = end
-					elif 0 < timer_begin - begin <= 59:
+					if 0 < timer_begin - begin <= 59:
 						timer_begin = begin
 				if x.justplay:
 					type_offset = 5
-					if x.pipzap and not x.repeated:
+					if x.pipzap and not timer_repeat:
 						type_offset = 30
 					if (timer_end - x.begin) <= 1:
 						timer_end += 60
 				if x.always_zap:
 					type_offset = 10
 
-				timer_repeat = x.repeated
 				# if set 'don't stop current event but disable coming events' for repeat timer
 				running_only_curevent = x.disabled and x.isRunning() and timer_repeat
 				if running_only_curevent:
@@ -185,7 +184,7 @@ class EPGSearchList(EPGList):
 						bt = localtime(begin)
 						bday = bt.tm_wday
 						begin2 = 1440 + bt.tm_hour * 60 + bt.tm_min
-						end2 = begin2 + duration / 60
+						end2 = begin2 + duration // 60
 					xbt = localtime(x.begin)
 					xet = localtime(timer_end)
 					offset_day = False
@@ -194,12 +193,12 @@ class EPGSearchList(EPGList):
 						oday = bday - 1
 						if oday == -1:
 							oday = 6
-						offset_day = x.repeated & (1 << oday)
+						offset_day = timer_repeat & (1 << oday)
 					xbegin = 1440 + xbt.tm_hour * 60 + xbt.tm_min
-					xend = xbegin + ((timer_end - x.begin) / 60)
+					xend = xbegin + ((timer_end - x.begin) // 60)
 					if xend < xbegin:
 						xend += 1440
-					if x.repeated & (1 << bday) and checking_time:
+					if timer_repeat & (1 << bday) and checking_time:
 						if begin2 < xbegin <= end2:
 							if xend < end2:
 								# recording within event
@@ -280,10 +279,6 @@ class EPGSearchList(EPGList):
 							time_match = end - begin
 							type = type_offset + 2
 				if time_match:
-					# if type in (2,7,12):
-					# When full recording do not look further
-					# returnValue = (time_match, [type])
-					# break
 					if returnValue:
 						if type not in returnValue[1]:
 							returnValue[1].append(type)
@@ -306,10 +301,10 @@ class EPGSearchList(EPGList):
 		remaining = ""
 		if beginTime is not None:
 			if nowTime < beginTime:
-				remaining = _(" (%d min)") % (duration / 60)
+				remaining = _(" (%d min)") % (duration // 60)
 			else:
 				prefix = "+"
-				total = ((beginTime + duration) - nowTime) / 60
+				total = ((beginTime + duration) - nowTime) // 60
 				if total <= 0:
 					prefix = ""
 				remaining = _(" (%s%d min)") % (prefix, total)
@@ -433,9 +428,9 @@ class EPGSearchList(EPGList):
 				x += self.col[1]
 				self.descr_rect = Rect(x, 0, width - x, height)
 			else:
-				self.weekday_rect = Rect(0, 0, width / 20 * 2 - 10, height)
-				self.datetime_rect = Rect(width / 20 * 2, 0, width / 20 * 5 - 15, height)
-				self.descr_rect = Rect(width / 20 * 7, 0, width / 20 * 13, height)
+				self.weekday_rect = Rect(0, 0, width // 20 * 2 - 10, height)
+				self.datetime_rect = Rect(width // 20 * 2, 0, width // 20 * 5 - 15, height)
+				self.descr_rect = Rect(width // 20 * 7, 0, width // 20 * 13, height)
 		elif self.type == EPG_TYPE_MULTI:
 			if self.skinColumns:
 				x = 0
@@ -447,14 +442,14 @@ class EPGSearchList(EPGList):
 				self.descr_rect = Rect(x, 0, width - x, height)
 			else:
 				xpos = 0
-				w = width / 10 * 3
+				w = width // 10 * 3
 				self.service_rect = Rect(xpos, 0, w - 10, height)
 				xpos += w
-				w = width / 10 * 2
+				w = width // 10 * 2
 				self.start_end_rect = Rect(xpos, 0, w - 10, height)
 				self.progress_rect = Rect(xpos, 4, w - 10, height - 8)
 				xpos += w
-				w = width / 10 * 5
+				w = width // 10 * 5
 				self.descr_rect = Rect(xpos, 0, width, height)
 		else:  # EPG_TYPE_SIMILAR
 			if self.skinColumns:
@@ -465,9 +460,9 @@ class EPGSearchList(EPGList):
 				x += self.col[1]
 				self.descr_rect = Rect(x, 0, width - x, height)
 			else:
-				self.weekday_rect = Rect(0, 0, width / 20 * 2 - 10, height)
-				self.datetime_rect = Rect(width / 20 * 2, 0, width / 20 * 5 - 15, height)
-				self.service_rect = Rect(width / 20 * 7, 0, width / 20 * 13, height)
+				self.weekday_rect = Rect(0, 0, width // 20 * 2 - 10, height)
+				self.datetime_rect = Rect(width // 20 * 2, 0, width // 20 * 5 - 15, height)
+				self.service_rect = Rect(width // 20 * 7, 0, width // 20 * 13, height)
 
 	def findPicon(self, service=None):
 		if service is not None:
@@ -597,19 +592,6 @@ class EPGSearch(EPGSelection):
 			if self.isTMBD:
 				self["key_red"].setText(_("Lookup in TMBD"))
 
-		# Hook up actions for yttrailer if installed
-		try:
-			from Plugins.Extensions.YTTrailer.plugin import baseEPGSelection__init__
-		except ImportError:
-			pass
-		else:
-			if baseEPGSelection__init__ is not None:
-				self["trailerActions"] = ActionMap(["InfobarActions", "InfobarTeletextActions"],
-				{
-					"showTv": self.showTrailer,
-					"showRadio": self.showTrailerList,
-					"startTeletext": self.showConfig
-				})
 
 	def onCreate(self):
 		self.setTitle(_("EPG Search"))
@@ -629,15 +611,16 @@ class EPGSearch(EPGSelection):
 
 	def eventSelected(self):
 		cur = self['list'].getCurrent()
-		event = cur[0]
-		serviceref = cur[1]
-		if event and serviceref:
-			ref = eServiceReference(str(serviceref))
-			id = event.getEventId()
-			try:
-				self.session.open(CurrentSearchSingleSelection, ref, event_id=id)
-			except:
-				pass
+		if cur:
+			event = cur[0]
+			serviceref = cur[1]
+			if event and serviceref:
+				ref = eServiceReference(str(serviceref))
+				id = event.getEventId()
+				try:
+					self.session.open(CurrentSearchSingleSelection, ref, event_id=id)
+				except:
+					pass
 
 	def nextBouquet(self):
 		if self.do_filter is None:
@@ -696,8 +679,9 @@ class EPGSearch(EPGSelection):
 			self.eventid = None
 
 	def onSelectionChanged(self):
-		self["Service"].newService(eServiceReference(str(self["list"].getCurrent()[1])))
-		self["Event"].newEvent(self["list"].getCurrent()[0])
+		cur = self["list"].getCurrent()
+		self["Service"].newService(cur and cur[1] or None)
+		self["Event"].newEvent(cur and cur[0] or None)
 		EPGSelection.onSelectionChanged(self)
 		if PartnerBoxZapRepIcons:
 			if self.isTMBD:
@@ -714,10 +698,11 @@ class EPGSearch(EPGSelection):
 			self.runTMBD()
 		else:
 			if self.select:
-				slist = [
-					(_("Lookup in TMBD"), "runtmbd"),
-					(_("Partnerbox Entries"), "partnerbox"),
-				]
+				cur = self["list"].getCurrent()
+				if cur and cur[0]:
+					slist = [(_("Lookup in TMBD"), "runtmbd"), (_("Partnerbox Entries"), "partnerbox"),]
+				else:
+					slist = [(_("Partnerbox Entries"), "partnerbox"),]
 				dlg = self.session.openWithCallback(self.RedbuttonCallback, ChoiceBox, title=_("Select action:"), list=slist)
 				dlg.setTitle(_("Choice list RED Button"))
 			else:
@@ -741,9 +726,12 @@ class EPGSearch(EPGSelection):
 
 	def runTMBD(self):
 		if self.isTMBD:
-			from Plugins.Extensions.TMBD.plugin import TMBD
+			try:
+				from Plugins.Extensions.TMBD.plugin import TMBD
+			except:
+				return
 			cur = self["list"].getCurrent()
-			if cur[0] is not None:
+			if cur and cur[0]:
 				name2 = cur[0].getEventName() or ''
 				name3 = name2.split("(")[0].strip()
 				eventname = name3.replace('"', '').replace('Õ/Ô', '').replace('Ì/Ô', '').replace('Õ/ô', '').replace('.', '')
@@ -790,14 +778,13 @@ class EPGSearch(EPGSelection):
 		if event:
 			options.append((_("Zap to selected service"), self.zapToSelectedService))
 		if autoTimerAvailable:
-			options.extend((
-				(_("Import from AutoTimer"), self.importFromAutoTimer),
-				(_("Save search as AutoTimer"), self.addAutoTimer),
-				(_("Export selected as AutoTimer"), self.exportAutoTimer),
-			))
-		if self.isTMBD:
-			options.append((_("Search for TMDb info"), self.opentmdb))
-		if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/IMDb/plugin.pyc"):
+			options.append((_("Import from AutoTimer"), self.importFromAutoTimer))
+			if event:
+				options.extend((
+					(_("Save search as AutoTimer"), self.addAutoTimer),
+					(_("Export selected as AutoTimer"), self.exportAutoTimer),
+				))
+		if event and fileExists("/usr/lib/enigma2/python/Plugins/Extensions/IMDb/plugin.pyc"):
 			options.append((_("Open selected in IMDb"), self.openImdb))
 		history = config.plugins.epgsearch.history.value
 		if len(history) > 0:
@@ -912,16 +899,6 @@ class EPGSearch(EPGSelection):
 			except:
 				pass
 
-	def opentmdb(self):
-		cur = self['list'].getCurrent()
-		event = cur[0]
-		if event:
-			try:
-				from Plugins.Extensions.TMDb.plugin import TMDbMain
-				self.session.open(TMDbMain, event.getEventName())
-			except ImportError:
-				pass
-
 	def ClearHistory(self):
 		history = config.plugins.epgsearch.history.value
 		if len(history) > 0:
@@ -968,14 +945,6 @@ class EPGSearch(EPGSelection):
 				else:
 					history.remove(searchString)
 					history.insert(0, searchString)
-
-			# Workaround to allow search for umlauts if we know the encoding (pretty bad, I know...)
-			encoding = config.plugins.epgsearch.encoding.value
-			if encoding != 'UTF-8':
-				try:
-					searchString = searchString.decode('UTF-8', 'replace').encode(encoding, 'replace')
-				except (UnicodeDecodeError, UnicodeEncodeError):
-					pass
 
 			# Search EPG, default to empty list
 			epgcache = eEPGCache.getInstance()  # XXX: the EPGList also keeps an instance of the cache but we better make sure that we get what we want :-)
