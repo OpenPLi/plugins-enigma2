@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SHOUTcast\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-11 10:58+0200\n"
-"PO-Revision-Date: 2018-07-31 21:30+0200\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
+"PO-Revision-Date: 2024-11-26 17:31+0100\n"
 "Last-Translator: Pr2 <dummy@dummy.com>\n"
 "Language-Team: OpenPLi\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.1.1\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #, python-format
@@ -93,6 +93,9 @@ msgstr "Créer un répertoire pour chaque stream"
 
 msgid "Disable Picture in Picture"
 msgstr "Désactiver l'incrustation d'image"
+
+msgid "Do you really want to exit SHOUTcast?"
+msgstr "Voulez-vous vraiment quitter SHOUTcast ?"
 
 msgid "Do you really want to stop the recording?"
 msgstr "Voulez-vous vraiment arrêter l'enregistrement?"
@@ -186,6 +189,10 @@ msgstr "Localisation des enregistrements:"
 
 msgid "Recording stream station"
 msgstr "Enregistrement d'une radion streamée"
+
+#, python-format
+msgid "Recording: %s"
+msgstr "Enregistrement: %s"
 
 msgid "Reload station list:"
 msgstr "Relire la liste des stations:"

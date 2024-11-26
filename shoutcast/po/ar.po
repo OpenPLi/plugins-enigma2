@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shoutcast\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-11 10:58+0200\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: mosad - مساعد الجعيد <abo-mishal@hotmail.com>\n"
 "Language-Team: mosad - مساعد الجعيد\n"
@@ -90,6 +90,10 @@ msgstr "إنشاء مسار لكل قناة تدفق"
 
 msgid "Disable Picture in Picture"
 msgstr "تعطيل قناة داخل قناة"
+
+#, fuzzy
+msgid "Do you really want to exit SHOUTcast?"
+msgstr "هل تريد حقاً إيقاف التسجيل؟"
 
 msgid "Do you really want to stop the recording?"
 msgstr "هل تريد حقاً إيقاف التسجيل؟"
@@ -183,6 +187,10 @@ msgstr "موقع التسجيل:"
 
 msgid "Recording stream station"
 msgstr "محطة بث التسجيل"
+
+#, fuzzy, python-format
+msgid "Recording: %s"
+msgstr "طول التسجيل"
 
 msgid "Reload station list:"
 msgstr "إعادة تحميل قائمة المحطات:"

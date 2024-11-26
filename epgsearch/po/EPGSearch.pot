@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 11:30+0200\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,6 +71,13 @@ msgstr ""
 msgid "Custom search"
 msgstr ""
 
+msgid "Delete"
+msgstr ""
+
+#, python-format
+msgid "Delete text '%s' from history?"
+msgstr ""
+
 msgid "Display name service as in bouquets"
 msgstr ""
 
@@ -96,9 +103,6 @@ msgid "Enter text to search for"
 msgstr ""
 
 msgid "Export selected as AutoTimer"
-msgstr ""
-
-msgid "Delete text '%s' from history?"
 msgstr ""
 
 msgid "History"

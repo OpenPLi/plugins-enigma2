@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Enigma2 - Plugin autotimer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 08:01+0100\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: 2012-02-17 14:58+0100\n"
 "Last-Translator: \n"
 "Language-Team: veselin & majevica CRNABERZA <jovanovic@gmx.ch>\n"
@@ -35,6 +35,9 @@ msgstr ""
 msgid ""
 "\n"
 "With 'Info' can be edited existing text from \"Match title\" and inserted to \"Description\"."
+msgstr ""
+
+msgid " (Short and Extended)"
 msgstr ""
 
 msgid " (only services from bouquets when use \"favorites description match\")."
@@ -343,9 +346,6 @@ msgstr ""
 msgid "Do you really want to delete %s?"
 msgstr "Da li zaista želite da izbrišete %s?"
 
-msgid "EPG encoding"
-msgstr "EPG enkripcija"
-
 msgid "Edit AutoTimer"
 msgstr "Uredi autotajmer"
 
@@ -550,6 +550,9 @@ msgstr "Ubaci postojeći tajmer"
 
 msgid "Import from EPG"
 msgstr "Ubaci iz EPG"
+
+msgid "In case of changes, a GUI restart is required to apply the changes."
+msgstr ""
 
 msgid "Include"
 msgstr "Uključi"

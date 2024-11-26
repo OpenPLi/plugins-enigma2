@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Enigma 2 EPGSearch Plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-12 14:32+0200\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: 2020-10-01 18:24+0300\n"
 "Last-Translator: mosad - مساعد الجعيد <abo-mishal@hotmail.com>\n"
 "Language-Team: mosad - مساعد الجعيد\n"
@@ -74,6 +74,13 @@ msgstr "لا يمكن قراءة المؤقت التلقائي من القائم
 msgid "Custom search"
 msgstr ""
 
+msgid "Delete"
+msgstr ""
+
+#, python-format
+msgid "Delete text '%s' from history?"
+msgstr ""
+
 msgid "Display name service as in bouquets"
 msgstr ""
 
@@ -104,9 +111,6 @@ msgstr "إدخال نص للبحث عن"
 #, fuzzy
 msgid "Export selected as AutoTimer"
 msgstr "حفظ البحث حسب المؤقت التلقائي"
-
-msgid "Delete text '%s' from history?"
-msgstr ""
 
 #, fuzzy
 msgid "History"

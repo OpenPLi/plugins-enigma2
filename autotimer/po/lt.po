@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AutoTimer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 08:01+0100\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: 2021-09-13 12:17+0300\n"
 "Last-Translator: Vytenis P.\n"
 "Language-Team: Vytenis P. <vyteniui@gmail.com>\n"
@@ -37,6 +37,9 @@ msgstr ""
 msgid ""
 "\n"
 "With 'Info' can be edited existing text from \"Match title\" and inserted to \"Description\"."
+msgstr ""
+
+msgid " (Short and Extended)"
 msgstr ""
 
 msgid " (only services from bouquets when use \"favorites description match\")."
@@ -335,9 +338,6 @@ msgstr "Nepraleisti atitikimo, jei aprašymo nėra"
 msgid "Do you really want to delete %s?"
 msgstr "Ar tikrai norite pašalinti %s?"
 
-msgid "EPG encoding"
-msgstr "EPG koduotė"
-
 msgid "Edit AutoTimer"
 msgstr "Redaguoti Autolaikmatį"
 
@@ -545,6 +545,9 @@ msgstr "Importuoti esamą laikmatį"
 
 msgid "Import from EPG"
 msgstr "Importuoti iš EPG"
+
+msgid "In case of changes, a GUI restart is required to apply the changes."
+msgstr ""
 
 msgid "Include"
 msgstr "Įskaitant"

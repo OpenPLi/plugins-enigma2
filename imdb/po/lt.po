@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IMDb\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-18 16:36+0100\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: 2021-09-15 12:42+0300\n"
 "Last-Translator: Vytenis P. <vyteniui@gmail.com>\n"
 "Language-Team: Vytenis P. <vyteniui@gmail.com>\n"
@@ -35,13 +35,25 @@ msgstr "Išsamiau"
 msgid "Downloading Movie Poster..."
 msgstr "Parsiunčiamas filmo plakatas: %s..."
 
+#, fuzzy
+msgid "Downloading reviews..."
+msgstr "Parsiunčiamas filmo plakatas: %s..."
+
 msgid "E"
 msgstr ""
 
 msgid "Enable this to be able to access IMDb search setup from within the plugin browser."
 msgstr "Kai čia įjungta, IMDb sąranką matysite įskiepių naršyklėje."
 
+#, fuzzy
+msgid "Enable this to be able to access IMDb searches from within the channel context menu."
+msgstr "Kai čia įjungta, IMDb paiešką matysite filmų sąraše."
+
 msgid "Enable this to be able to access IMDb searches from within the movie list."
+msgstr "Kai čia įjungta, IMDb paiešką matysite filmų sąraše."
+
+#, fuzzy
+msgid "Enable this to be able to access IMDb searches from within the multi-channel EPG menu."
 msgstr "Kai čia įjungta, IMDb paiešką matysite filmų sąraše."
 
 msgid "Enable this to be able to access IMDb searches from within the plugin browser."
@@ -82,6 +94,10 @@ msgstr "IMDb įskiepis"
 
 msgid "IMDb Re-Download completed"
 msgstr "IMDb parsiųstas iš naujo"
+
+#, fuzzy
+msgid "IMDb Reviews parsed"
+msgstr "IMDb informacija apdorota"
 
 msgid "IMDb Setup"
 msgstr "IMDb sąranka"
@@ -138,6 +154,12 @@ msgstr "Puslapį žemyn"
 msgid "Page up"
 msgstr "Puslapį aukštyn"
 
+msgid "Parsing reviews..."
+msgstr ""
+
+msgid "Play YT trailer"
+msgstr ""
+
 msgid "Please select the matching entry"
 msgstr "Pasirinkite atitinkantį įrašą"
 
@@ -161,6 +183,12 @@ msgstr "Išsaugoti šiuos duomenis tekstiniame faile"
 msgid "Save current Poster and Details as .txt"
 msgstr "Išsaugoti šį plakatą ir aprašymą tekstiniame faile"
 
+msgid "Search YT trailer"
+msgstr ""
+
+msgid "Search event in IMDb"
+msgstr ""
+
 msgid "Search for details from the Internet Movie Database"
 msgstr "Užklausti detaliau internetinėje filmų duomenų bazėje"
 
@@ -183,13 +211,23 @@ msgstr "Aktorių sąraše rodyti epizodo ir metų informaciją"
 msgid "Show episodes in title menu"
 msgstr "Rodyti pilną filmo ar serijos pavadinimą antraštės meniu"
 
+msgid "Show first page of user reviews"
+msgstr ""
+
 msgid "Show full movie or series name in title menu"
 msgstr "Rodyti pilną filmo ar serijos pavadinimą antraštės meniu"
+
+msgid "Show in channel context menu"
+msgstr ""
 
 msgid "Show in movie list"
 msgstr "Rodyti filmų sąraše"
 
-msgid "Show list of matched movies an series"
+msgid "Show in multi-channel EPG menu"
+msgstr ""
+
+#, fuzzy
+msgid "Show list of matched movies and series"
 msgstr "Rodyti atitinkančių serialų ir filmų sąrašą"
 
 msgid "Show movie and series basic details"
@@ -211,6 +249,15 @@ msgstr "Rodyti sąranką įskiepių naršyklėje"
 msgid "Show the whole IMDb title information for a movie or series, including, for example, alternative names and whether it's a series. Takes effect after the next search of IMDb for a show name."
 msgstr "Rodyti pilną IMDb filmo, ar serijos pavadinimo informaciją antraštės meniu, įskaitant, pavyzdžiui, alternatyvų pavadinimą ir ar tai serija/serialas. Įsigalioja tik sekančioje IMDb įvykio pavadinimo paieškoje."
 
+msgid "SubsSupport import failed"
+msgstr ""
+
+msgid "SubsSupport search"
+msgstr ""
+
+msgid "SubsSupport search failed"
+msgstr ""
+
 msgid "Synopsis"
 msgstr ""
 
@@ -223,8 +270,20 @@ msgstr "Ši parinktis leidžia įtraukti IMDb paieškoje ignoruotinus žodžius 
 msgid "Title Menu"
 msgstr "Pavadinimų meniu"
 
+msgid "User reviews"
+msgstr ""
+
 msgid "Words / phrases to ignore "
 msgstr "Ignoruotini žodžiai ir frazės "
+
+msgid "YT trailer import failed"
+msgstr ""
+
+msgid "YT trailer play failed"
+msgstr ""
+
+msgid "YT trailer search failed"
+msgstr ""
 
 msgid "connection error"
 msgstr ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: autotimer_fy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 08:01+0100\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: 2012-02-17 15:01+0100\n"
 "Last-Translator: \n"
 "Language-Team: gerrit <fy@li.org>\n"
@@ -32,6 +32,9 @@ msgstr ""
 msgid ""
 "\n"
 "With 'Info' can be edited existing text from \"Match title\" and inserted to \"Description\"."
+msgstr ""
+
+msgid " (Short and Extended)"
 msgstr ""
 
 msgid " (only services from bouquets when use \"favorites description match\")."
@@ -343,9 +346,6 @@ msgstr ""
 msgid "Do you really want to delete %s?"
 msgstr "Wolle jo wier %s ferwiderje?"
 
-msgid "EPG encoding"
-msgstr ""
-
 msgid "Edit AutoTimer"
 msgstr "Autotimer bewurkje"
 
@@ -551,6 +551,9 @@ msgid "Import existing Timer"
 msgstr ""
 
 msgid "Import from EPG"
+msgstr ""
+
+msgid "In case of changes, a GUI restart is required to apply the changes."
 msgstr ""
 
 msgid "Include"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Automatic Screen Resolution V. 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-03 15:37+0200\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Pr2 <dummy@dummy.com>\n"
 "Language-Team: OpenPLi\n"
@@ -14,7 +14,7 @@ msgstr ""
 "X-Poedit-KeywordsList: _(\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 3.4\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-SearchPath-0: ../src\n"
 
 msgid "Alternative resolution when native not supported"
@@ -88,6 +88,9 @@ msgstr "Mode 2160p30 activer"
 
 msgid "Enable 720p24 Mode"
 msgstr "Mode 720p24 activer"
+
+msgid "Enable 720p25 Mode"
+msgstr "Activer le mode 720p25"
 
 msgid "Enable 720p50 Mode"
 msgstr "Mode 720p50 activer"
@@ -181,6 +184,9 @@ msgstr "UHD mode progressif"
 
 msgid "Use 'seek' for stream/video content"
 msgstr "Utiliser 'seek' pour le contenu de flux/vidéo"
+
+msgid "Use 1080i25 same as 1080p25 content"
+msgstr "Utiliser le contenu 1080i25 comme le contenu 1080p25"
 
 msgid "Use 60HZ instead 30HZ"
 msgstr "Utiliser 60Hz à la place de 30 Hz"

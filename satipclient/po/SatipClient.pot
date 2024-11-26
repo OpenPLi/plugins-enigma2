@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 11:30+0200\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,9 +22,6 @@ msgid "%s autostart"
 msgstr ""
 
 msgid "Auto setup"
-msgstr ""
-
-msgid "Cancel"
 msgstr ""
 
 msgid "DVB-S"
@@ -74,9 +71,6 @@ msgstr ""
 msgid "Not found '%s' ..."
 msgstr ""
 
-msgid "OK"
-msgstr ""
-
 msgid "Port"
 msgstr ""
 
@@ -124,9 +118,6 @@ msgstr ""
 msgid "Save"
 msgstr ""
 
-msgid "Select"
-msgstr ""
-
 msgid "Select tuner and press: Yellow/OK - 'Auto setup' or Blue - 'Manual setup'. Menu - vtuner.conf."
 msgstr ""
 
@@ -139,7 +130,7 @@ msgstr ""
 msgid "Server name"
 msgstr ""
 
-msgid "Starting..."
+msgid "Set all the settings back as they were"
 msgstr ""
 
 #, python-format
@@ -148,6 +139,9 @@ msgstr ""
 
 #, python-format
 msgid "TYPE : %s"
+msgstr ""
+
+msgid "Toggle Configuration Mode or AutoDisqc"
 msgstr ""
 
 msgid "Tuner type"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shoutcast\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-11 10:58+0200\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dimitrij <dima-73@inbox.lv>\n"
 "Language-Team: Dimitrij openPLi\n"
@@ -88,6 +88,10 @@ msgstr "Создавать директорию для каждого стрим
 #, fuzzy
 msgid "Disable Picture in Picture"
 msgstr "Включить PiP (картинку в картинке)"
+
+#, fuzzy
+msgid "Do you really want to exit SHOUTcast?"
+msgstr "Вы действительно хотите остановить запись?"
 
 msgid "Do you really want to stop the recording?"
 msgstr "Вы действительно хотите остановить запись?"
@@ -181,6 +185,10 @@ msgstr "Дериктория записи (нажмите ОК для выбор
 
 msgid "Recording stream station"
 msgstr "Запись станции стрима"
+
+#, fuzzy, python-format
+msgid "Recording: %s"
+msgstr "Продолжительность записи"
 
 msgid "Reload station list:"
 msgstr "Перезагружать список станций"

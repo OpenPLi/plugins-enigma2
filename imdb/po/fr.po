@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 - IMDb\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-18 16:36+0100\n"
-"PO-Revision-Date: 2023-10-03 16:19+0200\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
+"PO-Revision-Date: 2024-11-26 17:28+0100\n"
 "Last-Translator: mimi74\n"
 "Language-Team: french-EGAMI\n"
 "Language: fr\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 3.4\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-SourceCharset: iso-8859-15\n"
 
 msgid "* = Restart Required"
@@ -32,14 +32,23 @@ msgstr "Détails"
 msgid "Downloading Movie Poster..."
 msgstr "Téléchargement affiche du film..."
 
+msgid "Downloading reviews..."
+msgstr "Téléchargement des critiques..."
+
 msgid "E"
 msgstr "E"
 
 msgid "Enable this to be able to access IMDb search setup from within the plugin browser."
 msgstr "Activer cette option pour accéder à la recherche IMDb depuis le navigateur des plugins."
 
+msgid "Enable this to be able to access IMDb searches from within the channel context menu."
+msgstr "Activez cette option pour pouvoir accéder aux recherches IMDb à partir du menu contextuel de la chaîne."
+
 msgid "Enable this to be able to access IMDb searches from within the movie list."
 msgstr "Activer cette option afin d'accéder à la recherche IMDb depuis la liste des films."
+
+msgid "Enable this to be able to access IMDb searches from within the multi-channel EPG menu."
+msgstr "Activez cette option pour pouvoir accéder aux recherches IMDb à partir du menu EPG multicanal."
 
 msgid "Enable this to be able to access IMDb searches from within the plugin browser."
 msgstr "Activer cette option afin d'accéder aux recherches IMDb à partir du navigateur des plugins."
@@ -79,6 +88,9 @@ msgstr "IMDb plugiciel"
 
 msgid "IMDb Re-Download completed"
 msgstr "IMDb Re-Téléchargement terminé"
+
+msgid "IMDb Reviews parsed"
+msgstr "Critiques IMDb analysées"
 
 msgid "IMDb Setup"
 msgstr "IMDb Configuration"
@@ -133,6 +145,12 @@ msgstr "Page suivante"
 msgid "Page up"
 msgstr "Page précédente"
 
+msgid "Parsing reviews..."
+msgstr "Analyse des critiques..."
+
+msgid "Play YT trailer"
+msgstr "Lire la bande-annonce YT"
+
 msgid "Please select the matching entry"
 msgstr "Veuillez sélectionner l'entrée correspondante"
 
@@ -156,6 +174,12 @@ msgstr "Enregistrer les détails actuels en tant que .txt"
 msgid "Save current Poster and Details as .txt"
 msgstr "Enregistrer l'affiche actuelle et les détails sous le format .txt"
 
+msgid "Search YT trailer"
+msgstr "Rechercher la bande-annonce sur YT"
+
+msgid "Search event in IMDb"
+msgstr "Recherche l'événement dans IMDb"
+
 msgid "Search for details from the Internet Movie Database"
 msgstr "Chercher les détails sur Internet Movie Database"
 
@@ -172,18 +196,27 @@ msgid "Show episode and year information for cast when available. Takes effect a
 msgstr "Afficher les informations sur l'épisode et l'année pour le casting lorsqu'elles sont disponibles. Prend effet après la prochaine récupération des détails de l'émission."
 
 msgid "Show episode and year information in cast list"
-msgstr "Afficher les informations de l'épisode et l'année dans la liste des acteurs "
+msgstr "Afficher les informations de l'épisode et l'année dans la liste des acteurs"
 
 msgid "Show episodes in title menu"
 msgstr "Afficher les épisodes dans le menu titre"
 
+msgid "Show first page of user reviews"
+msgstr "Afficher la première page des commentaires des utilisateurs"
+
 msgid "Show full movie or series name in title menu"
 msgstr "Afficher le nom complet du film ou de la série dans le titre du menu"
+
+msgid "Show in channel context menu"
+msgstr "Afficher dans le menu contextuel du canal"
 
 msgid "Show in movie list"
 msgstr "Afficher dans la liste des films"
 
-msgid "Show list of matched movies an series"
+msgid "Show in multi-channel EPG menu"
+msgstr "Afficher dans le menu EPG multicanal"
+
+msgid "Show list of matched movies and series"
 msgstr "Afficher la liste des correspondances pour les films et séries"
 
 msgid "Show movie and series basic details"
@@ -204,6 +237,15 @@ msgstr "Afficher la configuration dans les plugins"
 msgid "Show the whole IMDb title information for a movie or series, including, for example, alternative names and whether it's a series. Takes effect after the next search of IMDb for a show name."
 msgstr "Afficher l'information IMDb complète du titre du film ou de la série, en incluant, par exemple, les noms alternatifs et si c'est une série. Prendra effet à la prochaine recherche IMDb pour un nom donné."
 
+msgid "SubsSupport import failed"
+msgstr "L'importation de SubsSupport a échoué"
+
+msgid "SubsSupport search"
+msgstr "Recherche SubsSupport"
+
+msgid "SubsSupport search failed"
+msgstr "Échec de la recherche de SubsSupport"
+
 msgid "Synopsis"
 msgstr "Synopsis"
 
@@ -216,8 +258,20 @@ msgstr "Cette option vous permet d'ajouter des mots/phrases que l'IMDb ignorera 
 msgid "Title Menu"
 msgstr "Menu titre"
 
+msgid "User reviews"
+msgstr "Commentaires des utilisateurs"
+
 msgid "Words / phrases to ignore "
 msgstr "Mots / phrases à ignorer "
+
+msgid "YT trailer import failed"
+msgstr "L'importation de la bande-annonce de YT a échoué"
+
+msgid "YT trailer play failed"
+msgstr "La lecture de la bande-annonce YT a échoué"
+
+msgid "YT trailer search failed"
+msgstr "La recherche de la bande-annonce sur YT a échoué"
 
 msgid "connection error"
 msgstr "erreur de connexion"

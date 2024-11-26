@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 - shoutcast\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-11 10:58+0200\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Spaeleus <spaeleus@croci.org>\n"
 "Language-Team: www.linsat.net <spaeleusòcroci.org>\n"
@@ -91,6 +91,10 @@ msgstr "Creare una directory per ogni stream"
 
 msgid "Disable Picture in Picture"
 msgstr ""
+
+#, fuzzy
+msgid "Do you really want to exit SHOUTcast?"
+msgstr "Arrestare la registrazione?"
 
 msgid "Do you really want to stop the recording?"
 msgstr "Arrestare la registrazione?"
@@ -182,6 +186,10 @@ msgstr "Destinazione registrazioni:"
 
 msgid "Recording stream station"
 msgstr "Registrazione stream in corso"
+
+#, fuzzy, python-format
+msgid "Recording: %s"
+msgstr "Durata registrazione"
 
 msgid "Reload station list:"
 msgstr "Ricaricare elenco stazioni:"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 08:01+0100\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,9 @@ msgstr ""
 msgid ""
 "\n"
 "With 'Info' can be edited existing text from \"Match title\" and inserted to \"Description\"."
+msgstr ""
+
+msgid " (Short and Extended)"
 msgstr ""
 
 msgid " (only services from bouquets when use \"favorites description match\")."
@@ -323,9 +326,6 @@ msgstr ""
 msgid "Do you really want to delete %s?"
 msgstr ""
 
-msgid "EPG encoding"
-msgstr ""
-
 msgid "Edit AutoTimer"
 msgstr ""
 
@@ -522,6 +522,9 @@ msgid "Import existing Timer"
 msgstr ""
 
 msgid "Import from EPG"
+msgstr ""
+
+msgid "In case of changes, a GUI restart is required to apply the changes."
 msgstr ""
 
 msgid "Include"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Enigma 2 EPGSearch Plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-12 14:32+0200\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: 2024-11-12 09:27+0100\n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims21@users.sourceforge.net>\n"
@@ -67,6 +67,13 @@ msgstr "Nepodařilo se načíst seznam časovačů AutoTimeru: %s"
 msgid "Custom search"
 msgstr "Uživatelské hledání"
 
+msgid "Delete"
+msgstr ""
+
+#, python-format
+msgid "Delete text '%s' from history?"
+msgstr "Odstranit text '%s' z historie?"
+
 msgid "Display name service as in bouquets"
 msgstr "Zobrazovat názvy programů jako v přehledech"
 
@@ -93,9 +100,6 @@ msgstr "Zadejte text pro hledání"
 
 msgid "Export selected as AutoTimer"
 msgstr "Exportovat vybrané jako AutoTimer"
-
-msgid "Delete text '%s' from history?"
-msgstr "Odstranit text '%s' z historie?"
 
 msgid "History"
 msgstr "Historie"

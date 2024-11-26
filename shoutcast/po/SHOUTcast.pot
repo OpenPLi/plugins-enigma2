@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 11:30+0200\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,6 +86,9 @@ msgid "Create a directory for each stream"
 msgstr ""
 
 msgid "Disable Picture in Picture"
+msgstr ""
+
+msgid "Do you really want to exit SHOUTcast?"
 msgstr ""
 
 msgid "Do you really want to stop the recording?"
@@ -175,6 +178,10 @@ msgid "Recording location:"
 msgstr ""
 
 msgid "Recording stream station"
+msgstr ""
+
+#, python-format
+msgid "Recording: %s"
 msgstr ""
 
 msgid "Reload station list:"

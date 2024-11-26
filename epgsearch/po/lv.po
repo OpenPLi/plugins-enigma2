@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Enigma 2 EPGSearch Plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-12 14:32+0200\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: 2014-12-13 18:20+0300\n"
 "Last-Translator: Tapat <taapat@gmail.com>\n"
 "Language-Team: Taapat <taapat@gmail.com>\n"
@@ -68,6 +68,13 @@ msgstr "Nevar nolasīt auto taimeru sarakstu: %s"
 msgid "Custom search"
 msgstr "Pielāgota meklēšana"
 
+msgid "Delete"
+msgstr ""
+
+#, python-format
+msgid "Delete text '%s' from history?"
+msgstr ""
+
 msgid "Display name service as in bouquets"
 msgstr "Attēlot kanāla nosakukumu kā buķetē"
 
@@ -94,9 +101,6 @@ msgstr "Ievadiet tekstu kuru meklēt"
 
 msgid "Export selected as AutoTimer"
 msgstr "Eksportēt iezīmēto kā auto taimeri"
-
-msgid "Delete text '%s' from history?"
-msgstr ""
 
 msgid "History"
 msgstr "Vēsture"

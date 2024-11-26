@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 08:01+0100\n"
-"PO-Revision-Date: 2021-08-13 18:48+0200\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
+"PO-Revision-Date: 2024-11-26 17:16+0100\n"
 "Last-Translator: Pr2 <dummy@dummy.com>\n"
 "Language-Team: OpenPLi\n"
 "Language: fr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 msgid ""
@@ -32,11 +32,18 @@ msgid ""
 "\n"
 "With 'Info' can be edited existing text from \"Description\" and inserted to \"Match title\"."
 msgstr ""
+"\n"
+"La rubrique 'Info' permet de modifier le texte existant de la 'Description' et de l'insérer dans le 'Titre qui correspond'."
 
 msgid ""
 "\n"
 "With 'Info' can be edited existing text from \"Match title\" and inserted to \"Description\"."
 msgstr ""
+"\n"
+"La rubrique 'Info' permet de modifier le texte existant dans 'Titre qui correspond' et de l'insérer dans 'Description'."
+
+msgid " (Short and Extended)"
+msgstr " (courte et étendue)"
 
 msgid " (only services from bouquets when use \"favorites description match\")."
 msgstr " (seulement pour les services des favoris lorsqu’on utilise « la description du favoris correspond »)."
@@ -140,7 +147,7 @@ msgid "Amount of recordings left"
 msgstr "Nombre d'enregistrement restant"
 
 msgid "Any Day filter refers to the day of the timespan start, even if the timespan crosses midnight."
-msgstr ""
+msgstr "Le filtre Any Day se réfère au jour du début de la période de temps, même si la période de temps dépasse minuit."
 
 msgid "Any service/recording"
 msgstr "N'importe quel service/enregistrement"
@@ -149,7 +156,7 @@ msgid "Any time"
 msgstr "A n'importe quelle heure"
 
 msgid "Attention! We recommend that you ignore case when searching in Cyrillic if the search name contains uppercase and lowercase letters."
-msgstr ""
+msgstr "Attention ! Nous vous recommandons d'ignorer la casse lorsque vous effectuez une recherche en cyrillique si le nom de la recherche contient des majuscules et des minuscules."
 
 msgid "AutoTimer"
 msgstr "AutoTimer"
@@ -334,9 +341,6 @@ msgstr "Ne pas passer les correspondances lorsqu’il n’y a pas de description
 msgid "Do you really want to delete %s?"
 msgstr "Voulez-vous vraiment effacer %s?"
 
-msgid "EPG encoding"
-msgstr "Format encodage EPG"
-
 msgid "Edit AutoTimer"
 msgstr "Editer AutoTimer"
 
@@ -475,7 +479,7 @@ msgid "Here you can specify whether simultaneous timers of the same program can 
 msgstr "Vous pouvez spécifier si plusieurs programmations simultanées du même programme peuvent être créées. Cela autorise l'enregistrement simultané de programme dans différentes résolutions (p.e. les services SD et HD)."
 
 msgid "IPTV stream use only this service for search"
-msgstr ""
+msgstr "Le flux IPTV n'utilise que ce service pour la recherche"
 
 msgid "If 0, the popup will remain open."
 msgstr "Si 0, le message à l’écran restera ouvert."
@@ -543,6 +547,9 @@ msgstr "Import des timers existants"
 
 msgid "Import from EPG"
 msgstr "Import depuis EPG"
+
+msgid "In case of changes, a GUI restart is required to apply the changes."
+msgstr "En cas de modification, un redémarrage de l'interface graphique est nécessaire pour appliquer les changements."
 
 msgid "Include"
 msgstr "Inclure"

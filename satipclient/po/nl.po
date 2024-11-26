@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2-oe-alliance-plugins 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 11:30+0200\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: 2015-09-13 16:12+0100\n"
 "Last-Translator: Rob van der Does <RobvanderDoes@Gmail.com>\n"
 "Language-Team: Rob van der Does\n"
@@ -25,9 +25,6 @@ msgstr ""
 
 msgid "Auto setup"
 msgstr ""
-
-msgid "Cancel"
-msgstr "Annuleer"
 
 msgid "DVB-S"
 msgstr "DVB-S"
@@ -77,9 +74,6 @@ msgstr ""
 #, python-format
 msgid "Not found '%s' ..."
 msgstr ""
-
-msgid "OK"
-msgstr "OK"
 
 msgid "Port"
 msgstr ""
@@ -131,9 +125,6 @@ msgstr "SAT>IP server is niet gedetecteerd."
 msgid "Save"
 msgstr "Sla op"
 
-msgid "Select"
-msgstr "Kies"
-
 msgid "Select tuner and press: Yellow/OK - 'Auto setup' or Blue - 'Manual setup'. Menu - vtuner.conf."
 msgstr ""
 
@@ -146,8 +137,8 @@ msgstr "Servercapaciteit bezet. "
 msgid "Server name"
 msgstr ""
 
-msgid "Starting..."
-msgstr "Bezig te starten..."
+msgid "Set all the settings back as they were"
+msgstr ""
 
 #, python-format
 msgid "TUNER TYPE : %s"
@@ -156,6 +147,9 @@ msgstr "TUNER TYPE : %s"
 #, python-format
 msgid "TYPE : %s"
 msgstr "TYPE : %s"
+
+msgid "Toggle Configuration Mode or AutoDisqc"
+msgstr ""
 
 #, fuzzy
 msgid "Tuner type"

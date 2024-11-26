@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shoutcast\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-11 10:58+0200\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: JuSt611 <Software@Strasdas.de>\n"
 "Language-Team: Dr.Best <dr.best@dreambox-tools.info>\n"
@@ -90,6 +90,10 @@ msgstr "Verzeichnis für jeden Stream generieren"
 
 msgid "Disable Picture in Picture"
 msgstr ""
+
+#, fuzzy
+msgid "Do you really want to exit SHOUTcast?"
+msgstr "Soll die Aufnahme wirklich beendet werden?"
 
 msgid "Do you really want to stop the recording?"
 msgstr "Soll die Aufnahme wirklich beendet werden?"
@@ -183,6 +187,10 @@ msgstr "Aufnahmepfad"
 
 msgid "Recording stream station"
 msgstr "Aktuell laufende Aufnahme-Station"
+
+#, fuzzy, python-format
+msgid "Recording: %s"
+msgstr "Aufnahme-Länge"
 
 msgid "Reload station list:"
 msgstr "Stationsliste neu laden:"

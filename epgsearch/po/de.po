@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Enigma 2 EPGSearch Plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-12 14:32+0200\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: 2023-05-12 19:34+0200\n"
 "Last-Translator: kueken\n"
 "Language-Team: none\n"
@@ -71,6 +71,13 @@ msgstr "Liste der AutoTimer konnte nicht abgerufen werden: %s"
 msgid "Custom search"
 msgstr "Benutzerdefinierte Suche"
 
+msgid "Delete"
+msgstr ""
+
+#, python-format
+msgid "Delete text '%s' from history?"
+msgstr ""
+
 msgid "Display name service as in bouquets"
 msgstr "Namen des Service wie bei Bouquets anzeigen"
 
@@ -97,9 +104,6 @@ msgstr "Zu suchenden Text eingeben"
 
 msgid "Export selected as AutoTimer"
 msgstr "Auswahl als AutoTimer exportieren"
-
-msgid "Delete text '%s' from history?"
-msgstr ""
 
 msgid "History"
 msgstr "Verlauf"

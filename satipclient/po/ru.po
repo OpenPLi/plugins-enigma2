@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SAT>IP Client\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 11:30+0200\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: 2023-05-27 22:09+0300\n"
 "Last-Translator: Dimitrij <Dima-73@inbox.lv>\n"
 "Language-Team: Dimitrij PLi\n"
@@ -19,9 +19,6 @@ msgstr "%s автостарт"
 
 msgid "Auto setup"
 msgstr "Авто настройка"
-
-msgid "Cancel"
-msgstr "Отмена"
 
 msgid "DVB-S"
 msgstr "DVB-S"
@@ -70,9 +67,6 @@ msgstr "Не найден vtuner."
 msgid "Not found '%s' ..."
 msgstr "Не найден '%s' ..."
 
-msgid "OK"
-msgstr "OK"
-
 msgid "Port"
 msgstr "Порт"
 
@@ -120,9 +114,6 @@ msgstr "SAT>IP сервер не обнаружен."
 msgid "Save"
 msgstr "Сохранить"
 
-msgid "Select"
-msgstr "Выбор"
-
 msgid "Select tuner and press: Yellow/OK - 'Auto setup' or Blue - 'Manual setup'. Menu - vtuner.conf."
 msgstr "Выберите тюнер и нажмите кнопку: Желтая/OK - 'Авто настройка' или Синяя - 'Ручная настройка'. Меню - vtuner.conf."
 
@@ -135,8 +126,8 @@ msgstr "Вместимость сервера полная."
 msgid "Server name"
 msgstr "Название сервера"
 
-msgid "Starting..."
-msgstr "Запуск..."
+msgid "Set all the settings back as they were"
+msgstr ""
 
 #, python-format
 msgid "TUNER TYPE : %s"
@@ -145,6 +136,9 @@ msgstr "ТИП ТЮНЕРА : %s"
 #, python-format
 msgid "TYPE : %s"
 msgstr "ТИП : %s"
+
+msgid "Toggle Configuration Mode or AutoDisqc"
+msgstr ""
 
 msgid "Tuner type"
 msgstr "Тип тюнера"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IMDb\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-18 16:36+0100\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: 2016-02-17 21:31+0200\n"
 "Last-Translator: Dimitrij <Dima-73@inbox.lv>\n"
 "Language-Team: none\n"
@@ -33,6 +33,10 @@ msgstr "Подробнее"
 msgid "Downloading Movie Poster..."
 msgstr "Загрузка постера: %s..."
 
+#, fuzzy
+msgid "Downloading reviews..."
+msgstr "Загрузка постера: %s..."
+
 msgid "E"
 msgstr ""
 
@@ -41,7 +45,15 @@ msgid "Enable this to be able to access IMDb search setup from within the plugin
 msgstr "Включить это, чтобы получить доступ к IMDb из меню плагинов."
 
 #, fuzzy
+msgid "Enable this to be able to access IMDb searches from within the channel context menu."
+msgstr "Включить это, чтобы получить доступ к IMDb из меню плагинов."
+
+#, fuzzy
 msgid "Enable this to be able to access IMDb searches from within the movie list."
+msgstr "Включить это, чтобы получить доступ к IMDb из меню плагинов."
+
+#, fuzzy
+msgid "Enable this to be able to access IMDb searches from within the multi-channel EPG menu."
 msgstr "Включить это, чтобы получить доступ к IMDb из меню плагинов."
 
 #, fuzzy
@@ -84,6 +96,10 @@ msgstr "Плагин IMDb"
 
 msgid "IMDb Re-Download completed"
 msgstr "Повторная загрузка данных IMDb выполнена"
+
+#, fuzzy
+msgid "IMDb Reviews parsed"
+msgstr "Подробное описание из IMDb"
 
 msgid "IMDb Setup"
 msgstr "Настройки IMDb"
@@ -145,6 +161,12 @@ msgstr ""
 msgid "Page up"
 msgstr ""
 
+msgid "Parsing reviews..."
+msgstr ""
+
+msgid "Play YT trailer"
+msgstr ""
+
 msgid "Please select the matching entry"
 msgstr "Пожалуйста, выберите соответствующую запись"
 
@@ -169,6 +191,12 @@ msgstr "Сохранить текущие подробности как .txt"
 msgid "Save current Poster and Details as .txt"
 msgstr "Сохранить текущие постер и подробности как .txt"
 
+msgid "Search YT trailer"
+msgstr ""
+
+msgid "Search event in IMDb"
+msgstr ""
+
 #, fuzzy
 msgid "Search for details from the Internet Movie Database"
 msgstr "Запрос подробностей в IMDb (базе данных видео в интернете)"
@@ -192,14 +220,23 @@ msgstr ""
 msgid "Show episodes in title menu"
 msgstr ""
 
+msgid "Show first page of user reviews"
+msgstr ""
+
 msgid "Show full movie or series name in title menu"
+msgstr ""
+
+msgid "Show in channel context menu"
 msgstr ""
 
 #, fuzzy
 msgid "Show in movie list"
 msgstr "Показать в меню видео списка"
 
-msgid "Show list of matched movies an series"
+msgid "Show in multi-channel EPG menu"
+msgstr ""
+
+msgid "Show list of matched movies and series"
 msgstr ""
 
 msgid "Show movie and series basic details"
@@ -222,6 +259,15 @@ msgstr "Показать в меню плагинов"
 msgid "Show the whole IMDb title information for a movie or series, including, for example, alternative names and whether it's a series. Takes effect after the next search of IMDb for a show name."
 msgstr ""
 
+msgid "SubsSupport import failed"
+msgstr ""
+
+msgid "SubsSupport search"
+msgstr ""
+
+msgid "SubsSupport search failed"
+msgstr ""
+
 msgid "Synopsis"
 msgstr ""
 
@@ -235,8 +281,20 @@ msgstr "Эта опция позволяет добавить слова / фр�
 msgid "Title Menu"
 msgstr "Основное меню"
 
+msgid "User reviews"
+msgstr ""
+
 msgid "Words / phrases to ignore "
 msgstr "Cлова / фразы для игнорирования"
+
+msgid "YT trailer import failed"
+msgstr ""
+
+msgid "YT trailer play failed"
+msgstr ""
+
+msgid "YT trailer search failed"
+msgstr ""
 
 msgid "connection error"
 msgstr ""

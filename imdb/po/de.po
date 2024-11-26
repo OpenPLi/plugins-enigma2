@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Enigma 2 IMDb Plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-18 16:36+0100\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: 2015-02-11 21:14+0100\n"
 "Last-Translator: daTa deVil <http://opena.tv>\n"
 "Language-Team: openATV\n"
@@ -40,13 +40,23 @@ msgstr "Details"
 msgid "Downloading Movie Poster..."
 msgstr "Lade Filmplakat herunter: %s..."
 
+#, fuzzy
+msgid "Downloading reviews..."
+msgstr "Lade Filmplakat herunter: %s..."
+
 msgid "E"
 msgstr ""
 
 msgid "Enable this to be able to access IMDb search setup from within the plugin browser."
 msgstr ""
 
+msgid "Enable this to be able to access IMDb searches from within the channel context menu."
+msgstr ""
+
 msgid "Enable this to be able to access IMDb searches from within the movie list."
+msgstr ""
+
+msgid "Enable this to be able to access IMDb searches from within the multi-channel EPG menu."
 msgstr ""
 
 msgid "Enable this to be able to access IMDb searches from within the plugin browser."
@@ -88,6 +98,10 @@ msgstr "IMDb Plugin"
 
 msgid "IMDb Re-Download completed"
 msgstr "Erneuten Download ausgeführt"
+
+#, fuzzy
+msgid "IMDb Reviews parsed"
+msgstr "Filminformationen eingelesen"
 
 msgid "IMDb Setup"
 msgstr "IMDb Einstellungen"
@@ -147,6 +161,12 @@ msgstr ""
 msgid "Page up"
 msgstr ""
 
+msgid "Parsing reviews..."
+msgstr ""
+
+msgid "Play YT trailer"
+msgstr ""
+
 msgid "Please select the matching entry"
 msgstr "Bitte passenden Eintrag auswählen"
 
@@ -171,6 +191,12 @@ msgstr "aktuelle Details als .txt speichern für lokalen Gebrauch"
 msgid "Save current Poster and Details as .txt"
 msgstr "aktuelles Poster und die Details als .txt Datei speichern"
 
+msgid "Search YT trailer"
+msgstr ""
+
+msgid "Search event in IMDb"
+msgstr ""
+
 #, fuzzy
 msgid "Search for details from the Internet Movie Database"
 msgstr "Filminformationen aus der Internet Movie Database"
@@ -194,13 +220,22 @@ msgstr ""
 msgid "Show episodes in title menu"
 msgstr ""
 
+msgid "Show first page of user reviews"
+msgstr ""
+
 msgid "Show full movie or series name in title menu"
+msgstr ""
+
+msgid "Show in channel context menu"
 msgstr ""
 
 msgid "Show in movie list"
 msgstr ""
 
-msgid "Show list of matched movies an series"
+msgid "Show in multi-channel EPG menu"
+msgstr ""
+
+msgid "Show list of matched movies and series"
 msgstr ""
 
 msgid "Show movie and series basic details"
@@ -223,6 +258,15 @@ msgstr "Zeige im Plugin Browser"
 msgid "Show the whole IMDb title information for a movie or series, including, for example, alternative names and whether it's a series. Takes effect after the next search of IMDb for a show name."
 msgstr ""
 
+msgid "SubsSupport import failed"
+msgstr ""
+
+msgid "SubsSupport search"
+msgstr ""
+
+msgid "SubsSupport search failed"
+msgstr ""
+
 msgid "Synopsis"
 msgstr ""
 
@@ -235,7 +279,19 @@ msgstr ""
 msgid "Title Menu"
 msgstr "Titelauswahl"
 
+msgid "User reviews"
+msgstr ""
+
 msgid "Words / phrases to ignore "
+msgstr ""
+
+msgid "YT trailer import failed"
+msgstr ""
+
+msgid "YT trailer play failed"
+msgstr ""
+
+msgid "YT trailer search failed"
 msgstr ""
 
 msgid "connection error"

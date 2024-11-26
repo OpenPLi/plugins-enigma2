@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SatipClient\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 11:30+0200\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: 2017-07-01 11:43+0300\n"
 "Last-Translator: Vytenis P. <vyteniui@gmail.com>\n"
 "Language-Team: Vytenis P. <vyteniui@gmail.com>\n"
@@ -25,9 +25,6 @@ msgstr ""
 
 msgid "Auto setup"
 msgstr ""
-
-msgid "Cancel"
-msgstr "Atšaukti"
 
 msgid "DVB-S"
 msgstr "DVB-S"
@@ -78,9 +75,6 @@ msgstr "Virt. imtuvų nerasta."
 msgid "Not found '%s' ..."
 msgstr ""
 
-msgid "OK"
-msgstr "Gerai"
-
 msgid "Port"
 msgstr ""
 
@@ -130,9 +124,6 @@ msgstr "SAT>IP serverio nerasta."
 msgid "Save"
 msgstr "Išsaugoti"
 
-msgid "Select"
-msgstr "Pasirinkti"
-
 msgid "Select tuner and press: Yellow/OK - 'Auto setup' or Blue - 'Manual setup'. Menu - vtuner.conf."
 msgstr ""
 
@@ -145,8 +136,8 @@ msgstr "Serverio talpa užpildyta."
 msgid "Server name"
 msgstr ""
 
-msgid "Starting..."
-msgstr "Paleidžiama..."
+msgid "Set all the settings back as they were"
+msgstr ""
 
 #, python-format
 msgid "TUNER TYPE : %s"
@@ -155,6 +146,9 @@ msgstr "IMTUVO TIPAS : %s"
 #, python-format
 msgid "TYPE : %s"
 msgstr "TIPAS : %s"
+
+msgid "Toggle Configuration Mode or AutoDisqc"
+msgstr ""
 
 #, fuzzy
 msgid "Tuner type"

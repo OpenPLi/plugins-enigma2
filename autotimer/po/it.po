@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 - AutoTimer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 08:01+0100\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: 2012-02-17 14:59+0100\n"
 "Last-Translator: \n"
 "Language-Team: www.linsat.yeam <spaeleus@croci.org>\n"
@@ -34,6 +34,9 @@ msgstr ""
 msgid ""
 "\n"
 "With 'Info' can be edited existing text from \"Match title\" and inserted to \"Description\"."
+msgstr ""
+
+msgid " (Short and Extended)"
 msgstr ""
 
 msgid " (only services from bouquets when use \"favorites description match\")."
@@ -348,9 +351,6 @@ msgstr ""
 msgid "Do you really want to delete %s?"
 msgstr "Cancellare %s?"
 
-msgid "EPG encoding"
-msgstr "Codifica EPG"
-
 msgid "Edit AutoTimer"
 msgstr "Modifica AutoTimer"
 
@@ -558,6 +558,9 @@ msgstr "Importare timer esistente"
 
 msgid "Import from EPG"
 msgstr "Importare da EPG"
+
+msgid "In case of changes, a GUI restart is required to apply the changes."
+msgstr ""
 
 msgid "Include"
 msgstr "Includere"

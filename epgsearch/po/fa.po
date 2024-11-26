@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: epg search Persian Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-12 14:32+0200\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: 2014-11-22 20:45+0100\n"
 "Last-Translator: mehdi <mehdi_ar_yekta@yahoo.com>\n"
 "Language-Team: Persian Professionals <persianpros@yahoo.com>\n"
@@ -73,6 +73,13 @@ msgstr "%s نمی توانست لیست تایمر پلاگین تایمر خو�
 msgid "Custom search"
 msgstr ""
 
+msgid "Delete"
+msgstr ""
+
+#, python-format
+msgid "Delete text '%s' from history?"
+msgstr ""
+
 msgid "Display name service as in bouquets"
 msgstr ""
 
@@ -104,9 +111,6 @@ msgstr "وارد کردن یک متن به منظور جستجو برای "
 
 msgid "Export selected as AutoTimer"
 msgstr "صادر کردن منتخب به عنوان یک تایمر خودکار "
-
-msgid "Delete text '%s' from history?"
-msgstr ""
 
 msgid "History"
 msgstr "پیشینه"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SoftcamSetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 08:01+0100\n"
+"POT-Creation-Date: 2024-11-26 17:09+0100\n"
 "PO-Revision-Date: 2012-03-10 12:20+0100\n"
 "Last-Translator: blzr <blzr@o2.pl>\n"
 "Language-Team: none <blzr@o2.pl>\n"
@@ -35,6 +35,9 @@ msgstr ""
 msgid ""
 "\n"
 "With 'Info' can be edited existing text from \"Match title\" and inserted to \"Description\"."
+msgstr ""
+
+msgid " (Short and Extended)"
 msgstr ""
 
 msgid " (only services from bouquets when use \"favorites description match\")."
@@ -349,9 +352,6 @@ msgstr ""
 msgid "Do you really want to delete %s?"
 msgstr "Czy na pewno chcesz usunąć %s?"
 
-msgid "EPG encoding"
-msgstr "Kodowanie EPG"
-
 msgid "Edit AutoTimer"
 msgstr "Edytuj AutoTimer"
 
@@ -559,6 +559,9 @@ msgstr "Importuj istniejący timer"
 
 msgid "Import from EPG"
 msgstr "Importuj z EPG"
+
+msgid "In case of changes, a GUI restart is required to apply the changes."
+msgstr ""
 
 msgid "Include"
 msgstr "Dołącz"
