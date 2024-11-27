@@ -238,7 +238,7 @@ class IMDB(Screen, HelpableScreen):
 		self.ratingstars = -1
 
 		self["title"] = StaticText(_("The Internet Movie Database"))
-		# map new source -> old component
+		self.setTitle(_("The Internet Movie Database"))
 
 		def setText(txt):
 			StaticText.setText(self["title"], txt)
@@ -364,7 +364,7 @@ class IMDB(Screen, HelpableScreen):
 			self["castlabel"].hide()
 			self["poster"].hide()
 			self["extralabel"].hide()
-			self["title"].setText(_("Ambiguous results"))
+			self["title"].setText(_("Ambiguous results") + _(": %d total") % len(self.resultlist))
 			self["detailslabel"].setText(_("Please select the matching entry"))
 			self["detailslabel"].show()
 			self["key_blue"].setText("")
@@ -560,6 +560,8 @@ class IMDB(Screen, HelpableScreen):
 			self.Page = 1
 
 		if self.Page in (2, 3, 4):
+			if self.extra:
+				self["key_blue"].setText(_("Extra Info"))
 			self["extralabel"].hide()
 			if self.ratingstars > 0:
 				self["starsbg"].show()
