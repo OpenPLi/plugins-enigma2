@@ -27,9 +27,9 @@ from shutil import copy
 from six.moves.urllib.parse import quote_plus
 from time import strftime
 from twisted.internet.threads import deferToThread
+from os import path as os_path, remove as os_remove
 
 import json
-import os
 import re
 import requests
 import six
@@ -73,7 +73,8 @@ def downloadPage(url, filename, params=None, headers=None, cookies=None):
 def safeRemove(*names):
 	for name in names:
 		try:
-			os.remove(name)
+			if os_path.exists(name):
+				os_remove(name)
 		except:
 			pass
 
@@ -268,8 +269,6 @@ class IMDB(Screen, HelpableScreen):
 		# 4 = reviews page
 		self.Page = 0
 
-		self.Pig = "Pig.Pig" in str(self.renderer)
-
 		self.cookie = {
 			"lc-main": language.getLanguage(),
 			"session-id": "000-0000000-0000000",
@@ -292,10 +291,10 @@ class IMDB(Screen, HelpableScreen):
 			"contextMenu": (self.contextMenuPressed, _("Menu")),
 			"showEventInfo": (self.showDetails, _("Show movie and series basic details")),
 		}, -1)
-		self["actionsInfobar"] = HelpableActionMap(self, ["InfobarActions", "InfobarTeletextActions"],
+		self["actionsInfobar"] = HelpableActionMap(self, ["InfobarActions", "InfobarTeletextActions", "InfobarCueSheetActions"],
 		{
 			"showMovies": (self.bigPoster, _("Show a bigger poster")),
-			"reviews": (self.showReviews, _("Show first page of user reviews")),
+			"toggleMark": (self.showReviews, _("Show first page of user reviews")),
 			"startTeletext": (self.showSynopsis, _("Show movie and series synopsis")),
 		}, -1)
 		self["actionsDir"] = HelpableActionMap(self, "DirectionActions",
@@ -371,12 +370,13 @@ class IMDB(Screen, HelpableScreen):
 			self["key_green"].setText("")
 			self["key_yellow"].setText(_("Details"))
 			self["VKeyIcon"].boolean = False
+			safeRemove("/tmp/poster.jpg", "/tmp/poster-big.jpg")
 			self.Page = 0
 
 	def getLocalDetails(self):
 		self.html = open(self.localpath).read()
 		try:
-			self.json = open(os.path.splitext(self.localpath)[0] + ".json").read()
+			self.json = open(os_path.splitext(self.localpath)[0] + ".json").read()
 		except:
 			pass
 		self.IMDBparse()
@@ -582,7 +582,8 @@ class IMDB(Screen, HelpableScreen):
 			self["extralabel"].show()
 			self["detailslabel"].hide()
 			self["castlabel"].hide()
-			self.Pig and self["poster"].hide()
+			if "Pig.Pig" in str(self.renderer):
+				self["poster"].hide()
 			self["stars"].hide()
 			self["starsbg"].hide()
 			self["ratinglabel"].hide()
@@ -847,7 +848,7 @@ class IMDB(Screen, HelpableScreen):
 
 		if not search:
 			if self.localpath is not None:
-				if os.path.exists(self.localpath):
+				if os_path.exists(self.localpath):
 					self.getLocalDetails()
 				else:
 					self["statusbar"].setText(_("Local file does not exist: %s") % self.localpath)
@@ -954,6 +955,7 @@ class IMDB(Screen, HelpableScreen):
 			Len = len(self.resultlist)
 			self["menu"].l.setList(self.resultlist)
 			if Len == 1:
+				self["key_green"].setText(_("Title Menu"))
 				self.downloadTitle(self.resultlist[0][0], self.resultlist[0][1])
 			elif Len > 1:
 				self.Page = 1
@@ -1157,7 +1159,7 @@ class IMDB(Screen, HelpableScreen):
 				posterurl = posterurl.replace("_V1_", "_V1_QL75_UY%d_" % self["poster"].instance.size().height())
 				self["statusbar"].setText(_("Downloading Movie Poster..."))
 				localfile = "/tmp/poster.jpg"
-#               print("[IMDB] downloading poster " + posterurl + " to " + localfile)
+				#print("[IMDB] downloading poster " + posterurl + " to " + localfile)
 				download = downloadPage(posterurl, localfile)
 				download.addCallback(self.IMDBPoster).addErrback(self.http_failed)
 			else:
@@ -1382,7 +1384,7 @@ class IMDB(Screen, HelpableScreen):
 			self["poster"].instance.setPixmap(ptr)
 
 	def bigPoster(self):
-		if not self.generalinfos or self.poster_pos:
+		if not self.generalinfos or self.poster_pos or self.Page == 0:
 			return
 		posterurl = self.generalinfos['poster']
 		if posterurl:
@@ -1631,7 +1633,7 @@ def movielistSearch(session, serviceref, **kwargs):
 	serviceHandler = eServiceCenter.getInstance()
 	info = serviceHandler.info(serviceref)
 	eventName = info and info.getName(serviceref) or ''
-	(root, ext) = os.path.splitext(eventName)
+	(root, ext) = os_path.splitext(eventName)
 	if ext in KNOWN_EXTENSIONS or ext in KNOWN_EXTENSIONS2:
 		eventName = re.sub(r"[\W_]+", ' ', root, 0)
 	session.open(IMDB, eventName)
