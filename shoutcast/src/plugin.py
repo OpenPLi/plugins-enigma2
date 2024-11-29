@@ -402,7 +402,7 @@ class SHOUTcastWidget(Screen):
 		self["key_red"].setText(_("Record"))
 
 	def streamripperDataAvail(self, data):
-		sData = data.decode().replace('\n', '')
+		sData = data.decode('utf-8', 'ignore').replace('\n', '')
 		self["console"].setText(_("Recording: %s") % sData)
 
 	def stopReloadStationListTimer(self):
