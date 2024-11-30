@@ -658,7 +658,7 @@ class SHOUTcastWidget(Screen):
 	def callbackPLS(self, result):
 		self["headertext"].setText(self.headerTextString)
 		found = False
-		parts = str.split(result.decode(), "\n")
+		parts = str.split(result.decode('ISO 8859-1'), "\n")
 		for lines in parts:
 			if lines.find("File1=") != -1:
 				line = str.split(lines, "File1=")
