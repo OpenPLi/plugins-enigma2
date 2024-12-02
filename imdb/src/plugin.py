@@ -18,6 +18,8 @@ from Screens.ChoiceBox import ChoiceBox
 from Screens.HelpMenu import HelpableScreen
 from Screens.InfoBar import MoviePlayer
 from Screens.Screen import Screen
+from Screens.ChannelSelection import SimpleChannelSelection
+from Screens.EpgSelection import EPGSelection
 from Screens.VirtualKeyBoard import VirtualKeyBoard
 from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS, isPluginInstalled
 
@@ -635,10 +637,11 @@ class IMDB(Screen, HelpableScreen):
 	def contextMenuPressed(self):
 		self.hideBigPoster()
 		keys = []
-		list = [
-			(_("Enter search"), self.openVirtualKeyBoard),
-		]
+		list = [(_("Enter search"), self.openVirtualKeyBoard),]
 		keys += ["1"]
+
+		list.append((_("Import from EPG"), self.importFromEPG))
+		keys += ["2"]
 
 		if self.saving:
 			if self.savingpath is not None and self.titleId:
@@ -647,7 +650,7 @@ class IMDB(Screen, HelpableScreen):
 					(_("Save current Details as .txt"), self.saveTxtDetails),
 					(_("Save current Poster and Details as .txt"), self.savePosterTxtDetails),
 				))
-				keys += ["2", "3", "4"]
+				keys += ["3", "4", "5"]
 
 		if isPluginInstalled("TMBD"):
 			list.append((_("Play YT trailer"), self.openYttrailer))
@@ -677,6 +680,9 @@ class IMDB(Screen, HelpableScreen):
 	def menuCallback(self, ret=None):
 		if ret:
 			ret[1]() if len(ret) == 2 else ret[1](ret[2], ret[3])
+
+	def importFromEPG(self):
+		self.session.openWithCallback(self.gotSearchString, IMDbChannelSelection)
 
 	def playVideo(self, name, url):
 		ref = eServiceReference(4097, 0, url)
@@ -1441,6 +1447,41 @@ class IMDbPlayer(MoviePlayer):
 
 	def showMovies(self):
 		pass
+
+
+class IMDbChannelSelection(SimpleChannelSelection):
+	def __init__(self, session):
+		SimpleChannelSelection.__init__(self, session, _("Channel Selection"))
+		self.skinName = ["IMDbChannelSelection", "SimpleChannelSelection"]
+
+		self["ChannelSelectEPGActions"] = ActionMap(["ChannelSelectEPGActions"],
+		{
+				"showEPGList": self.channelSelected
+		})
+
+	def channelSelected(self):
+		ref = self.getCurrentSelection()
+		if ref:
+			if (ref.flags & 7) == 7:
+				self.enterPath(ref)
+			elif not (ref.flags & (eServiceReference.isMarker | eServiceReference.isDirectory | eServiceReference.isNumberedMarker)):
+				self.session.openWithCallback(self.epgClosed, IMDbEPGSelection, ref)
+
+	def epgClosed(self, ret=None):
+		if ret:
+			self.close(ret)
+
+
+class IMDbEPGSelection(EPGSelection):
+	def __init__(self, session, ref):
+		EPGSelection.__init__(self, session, ref)
+		self.skinName = ["IMDbEPGSelection", "EPGSelection"]
+
+	def eventSelected(self):
+		cur = self["list"].getCurrent()
+		evt = cur and cur[0]
+		if evt:
+			self.close(evt.getEventName())
 
 
 class IMDbLCDScreen(Screen):

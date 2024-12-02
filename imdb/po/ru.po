@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: IMDb\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-26 17:09+0100\n"
-"PO-Revision-Date: 2024-11-27 18:35+0200\n"
+"PO-Revision-Date: 2024-12-02 11:34+0200\n"
 "Last-Translator: Dimitrij <Dima-73@inbox.lv>\n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -283,3 +283,9 @@ msgstr "задержка"
 
 msgid ": %d total"
 msgstr ": %d всего"
+
+msgid "Import from EPG"
+msgstr "Импорт из EPG"
+
+msgid "Channel Selection"
+msgstr "Селектор каналов"
