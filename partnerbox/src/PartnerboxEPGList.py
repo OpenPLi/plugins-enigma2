@@ -113,12 +113,16 @@ def Partnerbox_SingleEntry(self, service, eventId, beginTime, duration, EventNam
 		Time = ""
 		if beginTime is not None:
 			if nowTime < beginTime:
-				Time = _("%d min") % (duration / 60)
+				Time = _("%d min") % (duration // 60)
 			else:
 				prefix = "+"
-				remaining = ((beginTime + duration) - nowTime) / 60
+				remaining = ((beginTime + duration) - nowTime) // 60
 				if remaining <= 0:
 					prefix = ""
+					count_len = len(str(remaining))
+					if count_len > 3:
+						times += count_len * 4
+						
 				Time = _("%s%d min") % (prefix, remaining)
 		res = [
 			None,
@@ -267,13 +271,13 @@ def Partnerbox_MultiEntry(self, changecount, service, eventId, begTime, duration
 				end = localtime(begTime + duration)
 				res.extend((
 					(eListboxPythonMultiContent.TYPE_TEXT, r4.x, r4.y, r4.w, r4.h, 1, RT_HALIGN_CENTER | RT_VALIGN_CENTER, "%02d.%02d - %02d.%02d" % (begin[3], begin[4], end[3], end[4])),
-					(eListboxPythonMultiContent.TYPE_TEXT, r3.x, r3.y, self.gap(self.tw), r3.h, 1, RT_HALIGN_RIGHT | RT_VALIGN_CENTER, _("%d min") % (duration / 60)),
+					(eListboxPythonMultiContent.TYPE_TEXT, r3.x, r3.y, self.gap(self.tw), r3.h, 1, RT_HALIGN_RIGHT | RT_VALIGN_CENTER, _("%d min") % (duration // 60)),
 					(eListboxPythonMultiContent.TYPE_TEXT, r3.x + self.tw, r3.y, r3.w, r3.h, 0, RT_HALIGN_LEFT, EventName)
 				))
 			else:
-				percent = (nowTime - begTime) * 100 / duration
+				percent = (nowTime - begTime) * 100 // duration
 				prefix = "+"
-				remaining = ((begTime + duration) - int(time())) / 60
+				remaining = ((begTime + duration) - int(time())) // 60
 				if remaining <= 0:
 					prefix = ""
 				res.extend((
@@ -290,7 +294,7 @@ def Partnerbox_MultiEntry(self, changecount, service, eventId, begTime, duration
 					(eListboxPythonMultiContent.TYPE_TEXT, r3.left(), r3.top(), r3.width(), r3.height(), 0, RT_HALIGN_LEFT, EventName)
 				))
 			else:
-				percent = (nowTime - begTime) * 100 / duration
+				percent = (nowTime - begTime) * 100 // duration
 				res.extend((
 					(eListboxPythonMultiContent.TYPE_PROGRESS, r2.left(), r2.top(), r2.width(), r2.height(), percent),
 					(eListboxPythonMultiContent.TYPE_TEXT, r3.left(), r3.top(), r3.width(), r3.height(), 0, RT_HALIGN_LEFT, EventName)
