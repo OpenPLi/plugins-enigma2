@@ -527,7 +527,7 @@ class SHOUTcastWidget(Screen):
 
 	def getGenreList(self, genre="all", id=0):
 		self["headertext"].setText("")
-		self["statustext"].setText(_("Getting SHOUTcast genre list for %s..." % genre))
+		self["statustext"].setText(_("Getting SHOUTcast genre list..."))
 		self["list"].hide()
 		if len(devid) > 8:
 			url = self.SC + "/genre/secondary?parentid=%s&k=%s&f=xml" % (id, devid)
