@@ -978,7 +978,7 @@ class SHOUTcastWidget(Screen):
 					if sTitle:
 						url = "http://www.bing.com/images/search?q=%s&FORM=HDRSC2" % quote(searchpara)
 					else:
-						url = "http://www.bing.com/images/search?q=%s&FORM=HDRSC2" % quote('shoutcast web radio')
+						url = "http://www.bing.com/images/search?q=%s&FORM=HDRSC2" % quote('shoutcast radio logo')
 					print("[SHOUTcast] coverurl = %s " % url)
 					if self.currentGoogle:
 						self.nextGoogle = url
