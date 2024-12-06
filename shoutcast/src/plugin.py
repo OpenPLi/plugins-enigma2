@@ -525,12 +525,12 @@ class SHOUTcastWidget(Screen):
 			self["list"].moveToIndex(favoriteListIndex)
 		self["list"].show()
 
-	def getGenreList(self, genre="all", id=0):
+	def getGenreList(self):
 		self["headertext"].setText("")
 		self["statustext"].setText(_("Getting SHOUTcast genre list..."))
 		self["list"].hide()
 		if len(devid) > 8:
-			url = self.SC + "/genre/secondary?parentid=%s&k=%s&f=xml" % (id, devid)
+			url = self.SC + "/genre/secondary?parentid=%s&k=%s&f=xml" % (0, devid)
 		else:
 			url = "http://207.200.98.1/sbin/newxml.phtml"
 		sendUrlCommand(url, 10).addCallback(content).addCallback(self.callbackGenreList).addErrback(self.callbackGenreListError)
