@@ -289,3 +289,12 @@ msgstr "Импорт из EPG"
 
 msgid "Channel Selection"
 msgstr "Селектор каналов"
+
+msgid "Spoiler"
+msgstr "Спойлер"
+
+msgid "%d out of %d found this helpful."
+msgstr "%d из %d нашли это полезным."
+
+msgid "IMDb Reviews failed"
+msgstr "IMDb - ошибка получения отзывов"
