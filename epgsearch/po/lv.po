@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Enigma 2 EPGSearch Plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-12 14:32+0200\n"
+"POT-Creation-Date: 2024-12-08 14:24+0100\n"
 "PO-Revision-Date: 2014-12-13 18:20+0300\n"
 "Last-Translator: Tapat <taapat@gmail.com>\n"
 "Language-Team: Taapat <taapat@gmail.com>\n"
@@ -55,9 +55,6 @@ msgstr "Izvēlieties EPG sarakstu"
 msgid "Choice list RED Button"
 msgstr "Sarkanā poga attēlo"
 
-msgid "Choosing an encoding. \"UTF-8\" to search for EPG cyrillic."
-msgstr "Izvēlieties kodējumu. \"UTF-8\" lai meklētu EPG cyrillic."
-
 msgid "Clear history"
 msgstr "Attīrīt vēsturi"
 
@@ -67,6 +64,13 @@ msgstr "Nevar nolasīt auto taimeru sarakstu: %s"
 
 msgid "Custom search"
 msgstr "Pielāgota meklēšana"
+
+msgid "Delete"
+msgstr ""
+
+#, python-format
+msgid "Delete text '%s' from history?"
+msgstr ""
 
 msgid "Display name service as in bouquets"
 msgstr "Attēlot kanāla nosakukumu kā buķetē"
@@ -86,17 +90,11 @@ msgstr "EPGSearch iestatījumi"
 msgid "Edit & search"
 msgstr "Rediģēt"
 
-msgid "Encoding Search to EPG"
-msgstr "Meklēt EPG kodējumā"
-
 msgid "Enter text to search for"
 msgstr "Ievadiet tekstu kuru meklēt"
 
 msgid "Export selected as AutoTimer"
 msgstr "Eksportēt iezīmēto kā auto taimeri"
-
-msgid "Delete text '%s' from history?"
-msgstr ""
 
 msgid "History"
 msgstr "Vēsture"
@@ -158,6 +156,9 @@ msgstr "Atvērt izvēlēto IMDb"
 msgid "Partnerbox Entries"
 msgstr "Partnerbox ieraksti"
 
+msgid "Save"
+msgstr ""
+
 msgid "Save search as AutoTimer"
 msgstr "Saglabāt atrasto kā auto taimeri"
 
@@ -169,9 +170,6 @@ msgstr "Meklēt EPG pēc notikumiem"
 
 msgid "Search event in EPG"
 msgstr "Meklēt notikumu EPG"
-
-msgid "Search for TMDb info"
-msgstr "Meklēt TMDb info"
 
 msgid "Search only bouquets"
 msgstr "Meklēt tikai buķetēs"

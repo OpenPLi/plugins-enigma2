@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2-plugins 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-12 14:32+0200\n"
+"POT-Creation-Date: 2024-12-08 14:24+0100\n"
 "PO-Revision-Date: 2014-11-22 20:45+0100\n"
 "Last-Translator: José Juan Zapater <josej@zapater.fdns.net>\n"
 "Language-Team: none\n"
@@ -58,9 +58,6 @@ msgstr ""
 msgid "Choice list RED Button"
 msgstr ""
 
-msgid "Choosing an encoding. \"UTF-8\" to search for EPG cyrillic."
-msgstr ""
-
 #, fuzzy
 msgid "Clear history"
 msgstr "Historia"
@@ -70,6 +67,13 @@ msgid "Could not read AutoTimer timer list: %s"
 msgstr ""
 
 msgid "Custom search"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+#, python-format
+msgid "Delete text '%s' from history?"
 msgstr ""
 
 msgid "Display name service as in bouquets"
@@ -94,17 +98,10 @@ msgstr ""
 msgid "Edit & search"
 msgstr "Buscar"
 
-#, fuzzy
-msgid "Encoding Search to EPG"
-msgstr "Buscar EPG"
-
 msgid "Enter text to search for"
 msgstr "Introduzca texto a buscar"
 
 msgid "Export selected as AutoTimer"
-msgstr ""
-
-msgid "Delete text '%s' from history?"
 msgstr ""
 
 msgid "History"
@@ -169,6 +166,9 @@ msgstr ""
 msgid "Partnerbox Entries"
 msgstr ""
 
+msgid "Save"
+msgstr ""
+
 msgid "Save search as AutoTimer"
 msgstr ""
 
@@ -181,9 +181,6 @@ msgstr ""
 #, fuzzy
 msgid "Search event in EPG"
 msgstr "Buscar EPG"
-
-msgid "Search for TMDb info"
-msgstr ""
 
 msgid "Search only bouquets"
 msgstr ""

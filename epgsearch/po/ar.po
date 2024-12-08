@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Enigma 2 EPGSearch Plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-12 14:32+0200\n"
+"POT-Creation-Date: 2024-12-08 14:24+0100\n"
 "PO-Revision-Date: 2020-10-01 18:24+0300\n"
 "Last-Translator: mosad - مساعد الجعيد <abo-mishal@hotmail.com>\n"
 "Language-Team: mosad - مساعد الجعيد\n"
@@ -60,9 +60,6 @@ msgstr "خروج من بحث دليل البرامج الإلكترونية"
 msgid "Choice list RED Button"
 msgstr ""
 
-msgid "Choosing an encoding. \"UTF-8\" to search for EPG cyrillic."
-msgstr ""
-
 #, fuzzy
 msgid "Clear history"
 msgstr "بدون تاريخ"
@@ -72,6 +69,13 @@ msgid "Could not read AutoTimer timer list: %s"
 msgstr "لا يمكن قراءة المؤقت التلقائي من القائمة: %s"
 
 msgid "Custom search"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+#, python-format
+msgid "Delete text '%s' from history?"
 msgstr ""
 
 msgid "Display name service as in bouquets"
@@ -94,19 +98,12 @@ msgstr "ضبط البحث في دليل البرامج الإلكترونية"
 msgid "Edit & search"
 msgstr "البحدث في دليل البرامج الإلكتروني"
 
-#, fuzzy
-msgid "Encoding Search to EPG"
-msgstr "البحث في دليل البرامج الإلكترونية"
-
 msgid "Enter text to search for"
 msgstr "إدخال نص للبحث عن"
 
 #, fuzzy
 msgid "Export selected as AutoTimer"
 msgstr "حفظ البحث حسب المؤقت التلقائي"
-
-msgid "Delete text '%s' from history?"
-msgstr ""
 
 #, fuzzy
 msgid "History"
@@ -172,6 +169,9 @@ msgstr "فتح الحدث المختار من قاعدة بيانات معلوم
 msgid "Partnerbox Entries"
 msgstr ""
 
+msgid "Save"
+msgstr ""
+
 msgid "Save search as AutoTimer"
 msgstr "حفظ البحث حسب المؤقت التلقائي"
 
@@ -184,9 +184,6 @@ msgstr ""
 #, fuzzy
 msgid "Search event in EPG"
 msgstr "البحث في دليل البرامج الإلكترونية"
-
-msgid "Search for TMDb info"
-msgstr ""
 
 #, fuzzy
 msgid "Search only bouquets"

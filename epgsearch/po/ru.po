@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Enigma 2 EPGSearch Plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-12 14:32+0200\n"
+"POT-Creation-Date: 2024-12-08 14:24+0100\n"
 "PO-Revision-Date: 2015-01-20 14:16+0200\n"
 "Last-Translator: Dimitrij <Dima-73@inbox.lv>\n"
 "Language-Team:  openPli\n"
@@ -54,9 +54,6 @@ msgstr "Список выбора поиска EPG"
 msgid "Choice list RED Button"
 msgstr "Список выбора на красной кнопке"
 
-msgid "Choosing an encoding. \"UTF-8\" to search for EPG cyrillic."
-msgstr "Выбор кодировки для поиска. Выберите \"UTF-8\" для поиска EPG на кириллице."
-
 msgid "Clear history"
 msgstr "Очистка истории"
 
@@ -66,6 +63,13 @@ msgstr "Не удалось прочитать список таймеров и�
 
 msgid "Custom search"
 msgstr "Пользовательский поиск"
+
+msgid "Delete"
+msgstr ""
+
+#, python-format
+msgid "Delete text '%s' from history?"
+msgstr "Удалить текст «'%s' из истории?"
 
 msgid "Display name service as in bouquets"
 msgstr "Имя сервиса как в букетах"
@@ -85,17 +89,11 @@ msgstr "Поиск EPG - настройки"
 msgid "Edit & search"
 msgstr "Редактор/поиск"
 
-msgid "Encoding Search to EPG"
-msgstr "Кодировка для поиска EPG"
-
 msgid "Enter text to search for"
 msgstr "Ввод текста поиска"
 
 msgid "Export selected as AutoTimer"
 msgstr "Экспорт выбранного как Автотаймер"
-
-msgid "Delete text '%s' from history?"
-msgstr "Удалить текст «'%s' из истории?"
 
 msgid "History"
 msgstr "История"
@@ -157,6 +155,9 @@ msgstr "Открыть поиск в IMDb"
 msgid "Partnerbox Entries"
 msgstr "Профили Partnerbox"
 
+msgid "Save"
+msgstr ""
+
 msgid "Save search as AutoTimer"
 msgstr "Сохранить поиск как Автотаймер"
 
@@ -168,9 +169,6 @@ msgstr "поиск EPG по названию события"
 
 msgid "Search event in EPG"
 msgstr "Поиск события в EPG"
-
-msgid "Search for TMDb info"
-msgstr "Поиск в TMBD"
 
 msgid "Search only bouquets"
 msgstr "Поиск только в фаворитах"

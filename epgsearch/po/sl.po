@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Enigma 2 EPGSearch Plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-12 14:32+0200\n"
+"POT-Creation-Date: 2024-12-08 14:24+0100\n"
 "PO-Revision-Date: 2014-11-22 20:46+0100\n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: www.linux-sprejemniki.info\n"
@@ -54,9 +54,6 @@ msgstr ""
 msgid "Choice list RED Button"
 msgstr ""
 
-msgid "Choosing an encoding. \"UTF-8\" to search for EPG cyrillic."
-msgstr ""
-
 #, fuzzy
 msgid "Clear history"
 msgstr "Ni zgodovine"
@@ -66,6 +63,13 @@ msgid "Could not read AutoTimer timer list: %s"
 msgstr "Ni možno prebrati seznama časovnikov: %s"
 
 msgid "Custom search"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+#, python-format
+msgid "Delete text '%s' from history?"
 msgstr ""
 
 msgid "Display name service as in bouquets"
@@ -89,18 +93,11 @@ msgstr "Nastavitve"
 msgid "Edit & search"
 msgstr "EPG iskanje"
 
-#, fuzzy
-msgid "Encoding Search to EPG"
-msgstr "Dodaj \"EPG Iskanje\" gumb v EPG"
-
 msgid "Enter text to search for"
 msgstr "Vpis besedila za namen iskanja"
 
 msgid "Export selected as AutoTimer"
 msgstr "Izvoz izbranega v AutoTimer vtičnik"
-
-msgid "Delete text '%s' from history?"
-msgstr ""
 
 msgid "History"
 msgstr "Zgodovina"
@@ -164,6 +161,9 @@ msgstr ""
 msgid "Partnerbox Entries"
 msgstr ""
 
+msgid "Save"
+msgstr ""
+
 msgid "Save search as AutoTimer"
 msgstr "Shranitev iskanja v AutoTimer vtičnik"
 
@@ -176,9 +176,6 @@ msgstr ""
 #, fuzzy
 msgid "Search event in EPG"
 msgstr "EPG iskanje"
-
-msgid "Search for TMDb info"
-msgstr ""
 
 msgid "Search only bouquets"
 msgstr ""

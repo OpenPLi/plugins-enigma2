@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Enigma 2 IMDb Plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-18 16:36+0100\n"
+"POT-Creation-Date: 2024-12-08 14:24+0100\n"
 "PO-Revision-Date: 2018-12-05 00:28+0300\n"
 "Last-Translator: mosad - مساعد الجعيد <abo-mishal@hotmail.com>\n"
 "Language-Team: mosad - مساعد الجعيد\n"
@@ -15,14 +15,25 @@ msgstr ""
 "X-Generator: Poedit 2.2\n"
 "X-Poedit-SearchPath-0: ../src\n"
 
+#, python-format
+msgid "%d out of %d found this helpful."
+msgstr ""
+
 msgid "* = Restart Required"
 msgstr "* = إعادة التشغيل مطلوبة"
+
+#, python-format
+msgid ": %d total"
+msgstr ""
 
 msgid "Ambiguous results"
 msgstr "نتائج غامضة"
 
 msgid "Cancel"
 msgstr "إلغاء"
+
+msgid "Channel Selection"
+msgstr ""
 
 #, fuzzy
 msgid "Couldn't get event name"
@@ -35,13 +46,25 @@ msgstr "تفاصيل"
 msgid "Downloading Movie Poster..."
 msgstr "تحميل ملصق الفيلم: %s..."
 
+#, fuzzy
+msgid "Downloading reviews..."
+msgstr "تحميل ملصق الفيلم: %s..."
+
 msgid "E"
 msgstr ""
 
 msgid "Enable this to be able to access IMDb search setup from within the plugin browser."
 msgstr "قم بتمكين هذا لتتمكن من الوصول إلى إعداد بحث قاعدة بيانات معلومات الافلام من داخل متصفح البلج إنز."
 
+#, fuzzy
+msgid "Enable this to be able to access IMDb searches from within the channel context menu."
+msgstr "قم بتمكين هذا لتتمكن من الوصول إلى عمليات بحث قاعدة بيانات معلومات الأفلام من داخل قائمة الأفلام."
+
 msgid "Enable this to be able to access IMDb searches from within the movie list."
+msgstr "قم بتمكين هذا لتتمكن من الوصول إلى عمليات بحث قاعدة بيانات معلومات الأفلام من داخل قائمة الأفلام."
+
+#, fuzzy
+msgid "Enable this to be able to access IMDb searches from within the multi-channel EPG menu."
 msgstr "قم بتمكين هذا لتتمكن من الوصول إلى عمليات بحث قاعدة بيانات معلومات الأفلام من داخل قائمة الأفلام."
 
 msgid "Enable this to be able to access IMDb searches from within the plugin browser."
@@ -84,6 +107,14 @@ msgid "IMDb Re-Download completed"
 msgstr "إكتمال إعادة تحميل قاعدة بيانات معلومات الأفلام"
 
 #, fuzzy
+msgid "IMDb Reviews failed"
+msgstr "فشل الاستعلام قاعدة بيانات معلومات الأفلام!"
+
+#, fuzzy
+msgid "IMDb Reviews parsed"
+msgstr "تحليل تفاصيل قاعدة بيانات معلومات الأفلام"
+
+#, fuzzy
 msgid "IMDb Setup"
 msgstr "ضبط قاعدة بيانات معلومات الأفلام"
 
@@ -105,6 +136,9 @@ msgstr "ضبط قاعدة بيانات معلومات الأفلام"
 
 #, python-format
 msgid "Ignoring invalid imdbId: %s"
+msgstr ""
+
+msgid "Import from EPG"
 msgstr ""
 
 #, fuzzy
@@ -140,6 +174,12 @@ msgstr "يسار الصفحة"
 msgid "Page up"
 msgstr "أعلى الصفحة"
 
+msgid "Parsing reviews..."
+msgstr ""
+
+msgid "Play YT trailer"
+msgstr ""
+
 msgid "Please select the matching entry"
 msgstr "من فضلك حدد النتائج المتطابقة"
 
@@ -163,6 +203,12 @@ msgstr "حفظ التفاصيل الحالية بصيغه .txt"
 msgid "Save current Poster and Details as .txt"
 msgstr "حفظ الملصق الحالي والتفاصيل بصيغه .txt"
 
+msgid "Search YT trailer"
+msgstr ""
+
+msgid "Search event in IMDb"
+msgstr ""
+
 msgid "Search for details from the Internet Movie Database"
 msgstr "البحث عن التفاصيل من قاعده بيانات الأفلام على الإنترنت"
 
@@ -185,13 +231,23 @@ msgstr "عرض الحلقة و السنة في قائمة الممثلين"
 msgid "Show episodes in title menu"
 msgstr "عرض أسم الفلم كامل أو المسلسلات في قائمة العناوين"
 
+msgid "Show first page of user reviews"
+msgstr ""
+
 msgid "Show full movie or series name in title menu"
 msgstr "عرض أسم الفلم كامل أو المسلسلات في قائمة العناوين"
+
+msgid "Show in channel context menu"
+msgstr ""
 
 msgid "Show in movie list"
 msgstr "عرض في قائمة الأفلام"
 
-msgid "Show list of matched movies an series"
+msgid "Show in multi-channel EPG menu"
+msgstr ""
+
+#, fuzzy
+msgid "Show list of matched movies and series"
 msgstr "عرض قائمة الأفلام والمسلسلات المتطابقة"
 
 msgid "Show movie and series basic details"
@@ -213,6 +269,18 @@ msgstr "عرض الضبط في متصفح البلج إنز"
 msgid "Show the whole IMDb title information for a movie or series, including, for example, alternative names and whether it's a series. Takes effect after the next search of IMDb for a show name."
 msgstr "عرض معلومات عنوان قاعدة بيانات معلومات الأفلام بالكامل لفيلم أو المسلسل ، بما في ذلك ، على سبيل المثال ، أسماء بديلة وما إذا كان مسلسل. يأخذ بعد البحث القادم من قاعدة بيانات معلومات الأفلام أسم المعرض."
 
+msgid "Spoiler"
+msgstr ""
+
+msgid "SubsSupport import failed"
+msgstr ""
+
+msgid "SubsSupport search"
+msgstr ""
+
+msgid "SubsSupport search failed"
+msgstr ""
+
 msgid "Synopsis"
 msgstr ""
 
@@ -225,8 +293,20 @@ msgstr "يتيح لك هذا الخيار إضافة كلمات / عبارات �
 msgid "Title Menu"
 msgstr "قائمه العناوين"
 
+msgid "User reviews"
+msgstr ""
+
 msgid "Words / phrases to ignore "
 msgstr "الكلمات/العبارات تجاهلها "
+
+msgid "YT trailer import failed"
+msgstr ""
+
+msgid "YT trailer play failed"
+msgstr ""
+
+msgid "YT trailer search failed"
+msgstr ""
 
 msgid "connection error"
 msgstr ""

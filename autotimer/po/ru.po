@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 08:01+0100\n"
+"POT-Creation-Date: 2024-12-08 14:24+0100\n"
 "PO-Revision-Date: 2020-08-29 14:48+0300\n"
 "Last-Translator: Dimitrij <Dima-73@inbox.lv>\n"
 "Language-Team: openpli.org\n"
@@ -35,6 +35,9 @@ msgid ""
 msgstr ""
 "\n"
 "С помощью 'Info' можно редактировать существующий текст из \"Название совпадения\" и вставить в \"Описание\"."
+
+msgid " (Short and Extended)"
+msgstr "(короткое и расширенное)"
 
 msgid " (only services from bouquets when use \"favorites description match\")."
 msgstr " (только в сервисах из букетов при использовании \"описание совпадения в фаворитах\")."
@@ -332,9 +335,6 @@ msgstr "Не пропускать совпадение, если нет опис
 msgid "Do you really want to delete %s?"
 msgstr "Вы действительно хотите удалить %s?"
 
-msgid "EPG encoding"
-msgstr "Кодировка EPG"
-
 msgid "Edit AutoTimer"
 msgstr "Редактировать Автотаймер"
 
@@ -511,7 +511,8 @@ msgstr "Если это включено, то лог поиска будет з
 msgid "If this enabled, will check the list of timers, conflicting autotimers are disabled, the duplicate autotimers will be deleted."
 msgstr "Если эта опция включена, то будет запущена проверка списка таймеров, по окончании поиска событий .Кофликтные автотаймеры будут отключены, дублирующие автотаймеры будут удалены."
 
-#python-format
+# python-format
+#, fuzzy, python-format
 msgid "If this is enabled an existing timer will also be considered recording an event if it records at least 80% of the it."
 msgstr "Если это включено, то уже существующий таймер также будет рассмотрен как записывающий событие, если этот таймер включает в себя не меньше 80% времени события."
 
@@ -541,6 +542,9 @@ msgstr "Импорт существующего таймера"
 
 msgid "Import from EPG"
 msgstr "Импорт из EPG"
+
+msgid "In case of changes, a GUI restart is required to apply the changes."
+msgstr "В случае изменений, для применения потребуется рестарт GUI."
 
 msgid "Include"
 msgstr "Включать"
@@ -1043,9 +1047,6 @@ msgstr "Название и краткое описание"
 msgid "Title and all descriptions"
 msgstr "Название и оба описания"
 
-msgid " (Short and Extended)"
-msgstr "(короткое и расширенное)"
-
 msgid "To cater for spelling mistakes and small deviations in the EPG information, you can make the matching algorithm fuzzy by setting the percentage both programmes must be equal for. Use 100% if you only want a match when both are completely identical. Recommended default ratio 80%."
 msgstr "Для обхода опечаток и небольших отклонений в информации EPG, Вы можете сделать алгоритм сопоставления нечетким, установив нужный процент для совпадения обеих программ. Используйте 100% для полной идентичности. Рекомендуемое соотношение по дефолту 80%."
 
@@ -1296,6 +1297,3 @@ msgstr "переключение"
 
 msgid "zap and record"
 msgstr "переключение и запись"
-
-msgid "In case of changes, a GUI restart is required to apply the changes."
-msgstr "В случае изменений, для применения потребуется рестарт GUI."

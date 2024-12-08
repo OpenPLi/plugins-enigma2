@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-12 14:32+0200\n"
-"PO-Revision-Date: 2021-08-13 18:42+0200\n"
+"POT-Creation-Date: 2024-12-08 14:24+0100\n"
+"PO-Revision-Date: 2024-12-08 14:36+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #, python-format
 msgid " (%d min)"
@@ -59,9 +59,6 @@ msgstr "Liste des choix RechercheEPG"
 msgid "Choice list RED Button"
 msgstr "Liste des choix bouton ROUGE"
 
-msgid "Choosing an encoding. \"UTF-8\" to search for EPG cyrillic."
-msgstr "Choisir un encodage. \"UTF-8\" pour chercher dans l'EPG cyrillique."
-
 msgid "Clear history"
 msgstr "Effacer l'historique"
 
@@ -71,6 +68,13 @@ msgstr "Impossible de lire la liste des AutoTimer: %s"
 
 msgid "Custom search"
 msgstr "Recherche personnalisée"
+
+msgid "Delete"
+msgstr "Effacer"
+
+#, python-format
+msgid "Delete text '%s' from history?"
+msgstr "Effacer le texte '%s' de l'historique?"
 
 msgid "Display name service as in bouquets"
 msgstr "Afficher le nom du service comme dans les bouquets"
@@ -90,17 +94,11 @@ msgstr "Configuration RechercheEPG"
 msgid "Edit & search"
 msgstr "Éditer & chercher"
 
-msgid "Encoding Search to EPG"
-msgstr "Encodage des recherches dans l'EPG"
-
 msgid "Enter text to search for"
 msgstr "Entrer le texte à rechercher"
 
 msgid "Export selected as AutoTimer"
 msgstr "Exporter la sélection en tant qu'AutoTimer"
-
-msgid "Delete text '%s' from history?"
-msgstr ""
 
 msgid "History"
 msgstr "Historique"
@@ -130,10 +128,10 @@ msgid "Import from Timer"
 msgstr "Importer depuis les Timers (programmations)"
 
 msgid "Include IPTV services"
-msgstr ""
+msgstr "Inclure les services IPTV"
 
 msgid "Include IPTV services in search, in some cases slows down the searching."
-msgstr ""
+msgstr "Inclure les services IPTV dans la recherche, dans certains cas, ralentit la recherche."
 
 msgid "Length of History"
 msgstr "Longueur de l'historique"
@@ -162,6 +160,9 @@ msgstr "Ouvrir la sélection dans IMDB"
 msgid "Partnerbox Entries"
 msgstr "Entrées du récepteur partenaire"
 
+msgid "Save"
+msgstr "Sauvergarder"
+
 msgid "Save search as AutoTimer"
 msgstr "Sauvegarder la recherche comme un AutoTimer"
 
@@ -173,9 +174,6 @@ msgstr "Rechercher un évènement dans l'EPG par son titre"
 
 msgid "Search event in EPG"
 msgstr "Rechercher l'évènement dans l'EPG"
-
-msgid "Search for TMDb info"
-msgstr "Recherche les infos de TMDB"
 
 msgid "Search only bouquets"
 msgstr "Chercher uniquement dans les bouquets"
@@ -198,9 +196,8 @@ msgstr "Choisir l'action:"
 msgid "Select channel"
 msgstr "Sélectionner une chaîne"
 
-#, fuzzy
 msgid "Select item for search and press 'OK' or edit item with yellow button or delete item with blue button."
-msgstr "Sélectionnez l’élément à rechercher et appuyez sur « OK » ou modifiez l’élément avec le bouton jaune."
+msgstr "Sélectionnez l’élément à rechercher et appuyez sur « OK » ou modifiez l’élément avec le bouton jaune ou l'effacer avec le bouton bleu."
 
 msgid "Select type for filter search. Press button P +/- for show/hide filter in description after search."
 msgstr "Sélectionner le type de filtre de recherche. Appuyez sur P+/- pour afficher/masquer le filtre dans la description après la recherche."
@@ -256,9 +253,8 @@ msgstr "recherche EPG"
 msgid "search EPG..."
 msgstr "recherche EPG..."
 
-#, fuzzy
 msgid "title ends with"
-msgstr "titre commence par"
+msgstr "titre se termine par"
 
 msgid "title starts with"
 msgstr "titre commence par"

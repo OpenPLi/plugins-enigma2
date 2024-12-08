@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2-plugins 3.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-18 16:36+0100\n"
+"POT-Creation-Date: 2024-12-08 14:24+0100\n"
 "PO-Revision-Date: 2014-12-19 17:15+0100\n"
 "Last-Translator: Rob van der Does <robvddoes@gmail.com>\n"
 "Language-Team: Samzan\n"
@@ -20,7 +20,15 @@ msgstr ""
 "X-Poedit-Language: Finnish\n"
 "X-Poedit-Country: FINLAND\n"
 
+#, python-format
+msgid "%d out of %d found this helpful."
+msgstr ""
+
 msgid "* = Restart Required"
+msgstr ""
+
+#, python-format
+msgid ": %d total"
 msgstr ""
 
 msgid "Ambiguous results"
@@ -28,6 +36,9 @@ msgstr "Useita tuloksia:"
 
 msgid "Cancel"
 msgstr "Peruuta"
+
+msgid "Channel Selection"
+msgstr ""
 
 #, fuzzy
 msgid "Couldn't get event name"
@@ -40,6 +51,10 @@ msgstr "Tiedot"
 msgid "Downloading Movie Poster..."
 msgstr "Ladataan elokuvan julistetta: %s..."
 
+#, fuzzy
+msgid "Downloading reviews..."
+msgstr "Ladataan elokuvan julistetta: %s..."
+
 msgid "E"
 msgstr ""
 
@@ -48,7 +63,15 @@ msgid "Enable this to be able to access IMDb search setup from within the plugin
 msgstr "Sallii pääsyn IMDb hakuun lisäosavalikosta"
 
 #, fuzzy
+msgid "Enable this to be able to access IMDb searches from within the channel context menu."
+msgstr "Sallii pääsyn IMDb hakuun lisäosavalikosta"
+
+#, fuzzy
 msgid "Enable this to be able to access IMDb searches from within the movie list."
+msgstr "Sallii pääsyn IMDb hakuun lisäosavalikosta"
+
+#, fuzzy
+msgid "Enable this to be able to access IMDb searches from within the multi-channel EPG menu."
 msgstr "Sallii pääsyn IMDb hakuun lisäosavalikosta"
 
 #, fuzzy
@@ -93,6 +116,14 @@ msgstr "IMDb Plugin"
 msgid "IMDb Re-Download completed"
 msgstr "IMDb lataus valmis"
 
+#, fuzzy
+msgid "IMDb Reviews failed"
+msgstr "IMDb haku epäonnistui!"
+
+#, fuzzy
+msgid "IMDb Reviews parsed"
+msgstr "Elokuvan IMDb tiedot"
+
 msgid "IMDb Setup"
 msgstr "IMDb asetukset"
 
@@ -116,6 +147,9 @@ msgstr "IMDb asetukset"
 
 #, python-format
 msgid "Ignoring invalid imdbId: %s"
+msgstr ""
+
+msgid "Import from EPG"
 msgstr ""
 
 msgid "Include episodes in the results. Takes effect after the next search of IMDb for a show name."
@@ -151,6 +185,12 @@ msgstr ""
 msgid "Page up"
 msgstr ""
 
+msgid "Parsing reviews..."
+msgstr ""
+
+msgid "Play YT trailer"
+msgstr ""
+
 msgid "Please select the matching entry"
 msgstr "Valitse sopivin hakutulos"
 
@@ -172,6 +212,12 @@ msgid "Save current Details as .txt"
 msgstr ""
 
 msgid "Save current Poster and Details as .txt"
+msgstr ""
+
+msgid "Search YT trailer"
+msgstr ""
+
+msgid "Search event in IMDb"
 msgstr ""
 
 #, fuzzy
@@ -197,13 +243,22 @@ msgstr ""
 msgid "Show episodes in title menu"
 msgstr ""
 
+msgid "Show first page of user reviews"
+msgstr ""
+
 msgid "Show full movie or series name in title menu"
+msgstr ""
+
+msgid "Show in channel context menu"
 msgstr ""
 
 msgid "Show in movie list"
 msgstr ""
 
-msgid "Show list of matched movies an series"
+msgid "Show in multi-channel EPG menu"
+msgstr ""
+
+msgid "Show list of matched movies and series"
 msgstr ""
 
 msgid "Show movie and series basic details"
@@ -226,6 +281,18 @@ msgstr "Näytä lisäosavalikossa"
 msgid "Show the whole IMDb title information for a movie or series, including, for example, alternative names and whether it's a series. Takes effect after the next search of IMDb for a show name."
 msgstr ""
 
+msgid "Spoiler"
+msgstr ""
+
+msgid "SubsSupport import failed"
+msgstr ""
+
+msgid "SubsSupport search"
+msgstr ""
+
+msgid "SubsSupport search failed"
+msgstr ""
+
 msgid "Synopsis"
 msgstr ""
 
@@ -239,8 +306,20 @@ msgstr "Sallii poistaa sanoja tai sanontoja hakuehdoista. Eroittele sanat pilkul
 msgid "Title Menu"
 msgstr "Nimivalikko"
 
+msgid "User reviews"
+msgstr ""
+
 msgid "Words / phrases to ignore "
 msgstr "Hylättävät sanat / sanonnat"
+
+msgid "YT trailer import failed"
+msgstr ""
+
+msgid "YT trailer play failed"
+msgstr ""
+
+msgid "YT trailer search failed"
+msgstr ""
 
 msgid "connection error"
 msgstr ""

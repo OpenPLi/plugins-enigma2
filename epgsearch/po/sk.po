@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Enigma 2 EPGSearch Plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-12 14:32+0200\n"
+"POT-Creation-Date: 2024-12-08 14:24+0100\n"
 "PO-Revision-Date: 2017-03-27 14:35+0200\n"
 "Last-Translator: ims <andrej.tobola@gmail.com>\n"
 "Language-Team: PLi <ims21@users.sourceforge.net>\n"
@@ -54,9 +54,6 @@ msgstr "Zvoliť zoznam EPGSearch"
 msgid "Choice list RED Button"
 msgstr "Voľba zoznamu červeného tlačidla"
 
-msgid "Choosing an encoding. \"UTF-8\" to search for EPG cyrillic."
-msgstr "Voľba kódovania. \"UTF-8\" pre vyhľadávanie cyriliky v EPG. "
-
 msgid "Clear history"
 msgstr "Zmazať históriu"
 
@@ -65,6 +62,13 @@ msgid "Could not read AutoTimer timer list: %s"
 msgstr "Nepodarilo sa načítať zoznam časovačov AutoTimeru: %s"
 
 msgid "Custom search"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+#, python-format
+msgid "Delete text '%s' from history?"
 msgstr ""
 
 msgid "Display name service as in bouquets"
@@ -87,17 +91,11 @@ msgstr "Nastavenie EPGSearch"
 msgid "Edit & search"
 msgstr "EPG hľadanie"
 
-msgid "Encoding Search to EPG"
-msgstr "Kódovanie hľadania v EPG"
-
 msgid "Enter text to search for"
 msgstr "Zadajte text pre hľadanie"
 
 msgid "Export selected as AutoTimer"
 msgstr "Exportovať vybrané ako AutoTimer"
-
-msgid "Delete text '%s' from history?"
-msgstr ""
 
 msgid "History"
 msgstr "História"
@@ -159,6 +157,9 @@ msgstr "Otvoriť vybrané v IMDb"
 msgid "Partnerbox Entries"
 msgstr "Položky Partnerbox"
 
+msgid "Save"
+msgstr ""
+
 msgid "Save search as AutoTimer"
 msgstr "Uložiť hľadanie ako AutoTimer"
 
@@ -170,9 +171,6 @@ msgstr "Hľadať EPG podľa názvu udalosti"
 
 msgid "Search event in EPG"
 msgstr "Nájsť udalosť v EPG"
-
-msgid "Search for TMDb info"
-msgstr "Vyhľadať TMDb informácie"
 
 msgid "Search only bouquets"
 msgstr "Prehľadávať len obľúbené položky"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Enigma2 Autotimer plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 08:01+0100\n"
+"POT-Creation-Date: 2024-12-08 14:24+0100\n"
 "PO-Revision-Date: 2024-03-17 08:21+0100\n"
 "Last-Translator: IMS <ims@openpli.org>\n"
 "Language-Team: PLi <ims21@users.sourceforge.net>\n"
@@ -41,6 +41,9 @@ msgid ""
 msgstr ""
 "\n"
 "Pomocí 'Info' může být upraven existující text z \"Hledaný název/text\" a vložen do \"Název časovače\"."
+
+msgid " (Short and Extended)"
+msgstr ""
 
 msgid " (only services from bouquets when use \"favorites description match\")."
 msgstr " (hledat pouze v popisu stanic z přehledů zvolte \"V popisu jen v přehledech\"."
@@ -338,9 +341,6 @@ msgstr "Nepřeskakovat, pokud není popis"
 msgid "Do you really want to delete %s?"
 msgstr "Opravdu chcete smazat %s?"
 
-msgid "EPG encoding"
-msgstr "Kódování EPG"
-
 msgid "Edit AutoTimer"
 msgstr "Upravit AutoTimer"
 
@@ -547,6 +547,9 @@ msgstr "Importovat existující časovač"
 
 msgid "Import from EPG"
 msgstr "Importovat z EPG"
+
+msgid "In case of changes, a GUI restart is required to apply the changes."
+msgstr ""
 
 msgid "Include"
 msgstr "Včetně"

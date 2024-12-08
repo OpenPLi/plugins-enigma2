@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Automatic Screen Resolution V. 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-03 15:37+0200\n"
+"POT-Creation-Date: 2024-12-08 14:24+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: mosad - مساعد الجعيد <abo-mishal@hotmail.com>\n"
 "Language-Team: mosad - مساعد الجعيد\n"
@@ -87,6 +87,10 @@ msgid "Enable 2160p30 Mode"
 msgstr "تمكين وضع 2160p30"
 
 msgid "Enable 720p24 Mode"
+msgstr "تفعيل صيغة 720p24"
+
+#, fuzzy
+msgid "Enable 720p25 Mode"
 msgstr "تفعيل صيغة 720p24"
 
 msgid "Enable 720p50 Mode"
@@ -180,6 +184,9 @@ msgid "UHD Progressive Mode"
 msgstr "وضع المعالجة فوركي"
 
 msgid "Use 'seek' for stream/video content"
+msgstr ""
+
+msgid "Use 1080i25 same as 1080p25 content"
 msgstr ""
 
 msgid "Use 60HZ instead 30HZ"

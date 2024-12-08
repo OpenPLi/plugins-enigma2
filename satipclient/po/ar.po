@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: satipclient\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 11:30+0200\n"
+"POT-Creation-Date: 2024-12-08 14:24+0100\n"
 "PO-Revision-Date: 2020-11-05 17:11+0300\n"
 "Last-Translator: mosad - مساعد الجعيد <abo-mishal@hotmail.com>\n"
 "Language-Team: mosad - مساعد الجعيد\n"
@@ -20,9 +20,6 @@ msgstr ""
 
 msgid "Auto setup"
 msgstr ""
-
-msgid "Cancel"
-msgstr "إلغاء"
 
 msgid "DVB-S"
 msgstr "بث الفديو الرقمي من الأقمار"
@@ -73,9 +70,6 @@ msgstr "لم يتم العثور على المؤالف."
 msgid "Not found '%s' ..."
 msgstr ""
 
-msgid "OK"
-msgstr "موافق"
-
 msgid "Port"
 msgstr ""
 
@@ -125,9 +119,6 @@ msgstr "القمر>لم يتم الكشف عن خادم الايبي."
 msgid "Save"
 msgstr "حفظ"
 
-msgid "Select"
-msgstr "تحديد"
-
 msgid "Select tuner and press: Yellow/OK - 'Auto setup' or Blue - 'Manual setup'. Menu - vtuner.conf."
 msgstr ""
 
@@ -140,8 +131,8 @@ msgstr "سعة الخادم ممتلئة."
 msgid "Server name"
 msgstr ""
 
-msgid "Starting..."
-msgstr "يشتغل..."
+msgid "Set all the settings back as they were"
+msgstr ""
 
 #, python-format
 msgid "TUNER TYPE : %s"
@@ -150,6 +141,9 @@ msgstr "نوع موالف : %s"
 #, python-format
 msgid "TYPE : %s"
 msgstr "النوع : %s"
+
+msgid "Toggle Configuration Mode or AutoDisqc"
+msgstr ""
 
 #, fuzzy
 msgid "Tuner type"
