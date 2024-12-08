@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shoutcast\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-11 10:58+0200\n"
+"POT-Creation-Date: 2024-12-08 14:27+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dimitrij <dima-73@inbox.lv>\n"
 "Language-Team: Dimitrij openPLi\n"
@@ -27,7 +27,7 @@ msgid ""
 "Press green-button to try again..."
 msgstr ""
 "%s\n"
-"Нажмите зелёную кнопку, для повторной попытки.."
+"Нажмите зелёную кнопку, для повторной попытки..."
 
 msgid ">= 128 kbps"
 msgstr ">= 128 kbps"
@@ -85,9 +85,11 @@ msgstr "Ширина обложки"
 msgid "Create a directory for each stream"
 msgstr "Создавать директорию для каждого стрима"
 
-#, fuzzy
 msgid "Disable Picture in Picture"
-msgstr "Включить PiP (картинку в картинке)"
+msgstr "Отключить PiP (картинку в картинке)"
+
+msgid "Do you really want to exit SHOUTcast?"
+msgstr ""
 
 msgid "Do you really want to stop the recording?"
 msgstr "Вы действительно хотите остановить запись?"
@@ -123,10 +125,6 @@ msgstr "Жанры"
 #, python-format
 msgid "Getting %s"
 msgstr "Получение %s"
-
-#, fuzzy, python-format
-msgid "Getting SHOUTcast genre list for %s..."
-msgstr "Получение списка жанров SHOUTcast..."
 
 msgid "Getting SHOUTcast genre list..."
 msgstr "Получение списка жанров SHOUTcast..."
@@ -181,6 +179,10 @@ msgstr "Дериктория записи (нажмите ОК для выбор
 
 msgid "Recording stream station"
 msgstr "Запись станции стрима"
+
+#, python-format
+msgid "Recording: %s"
+msgstr ""
 
 msgid "Reload station list:"
 msgstr "Перезагружать список станций"

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 11:30+0200\n"
-"PO-Revision-Date: 2023-07-26 11:36+0200\n"
+"POT-Creation-Date: 2024-12-08 14:24+0100\n"
+"PO-Revision-Date: 2024-12-08 14:42+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #, python-format
 msgid "%s autostart"
@@ -24,9 +24,6 @@ msgstr "%s démarrage automatique"
 
 msgid "Auto setup"
 msgstr "Configuration automatique"
-
-msgid "Cancel"
-msgstr "Annuler"
 
 msgid "DVB-S"
 msgstr "DVB-S"
@@ -75,9 +72,6 @@ msgstr "Aucun vtuner trouvé."
 msgid "Not found '%s' ..."
 msgstr "Pas trouvé '%s' ..."
 
-msgid "OK"
-msgstr "Ok"
-
 msgid "Port"
 msgstr "Port"
 
@@ -125,9 +119,6 @@ msgstr "Le serveur SAT>IP n'est pas détecté."
 msgid "Save"
 msgstr "Sauver"
 
-msgid "Select"
-msgstr "Sélectionner"
-
 msgid "Select tuner and press: Yellow/OK - 'Auto setup' or Blue - 'Manual setup'. Menu - vtuner.conf."
 msgstr "Choisir le tuner et appuyer: Jaune/OK - 'Configuration automatique' ou Bleu - 'Configuration manuelle'. Menu - vtuner.conf."
 
@@ -140,8 +131,8 @@ msgstr "La capacité du serveur est pleine."
 msgid "Server name"
 msgstr "Nom du serveur"
 
-msgid "Starting..."
-msgstr "Démarrage..."
+msgid "Set all the settings back as they were"
+msgstr "Remettre tous les paramètres comme ils étaient"
 
 #, python-format
 msgid "TUNER TYPE : %s"
@@ -150,6 +141,9 @@ msgstr "TYPE de TUNER: %s"
 #, python-format
 msgid "TYPE : %s"
 msgstr "TYPE : %s"
+
+msgid "Toggle Configuration Mode or AutoDisqc"
+msgstr "Basculer le mode de configuration ou AutoDisqc"
 
 msgid "Tuner type"
 msgstr "Type tuner"

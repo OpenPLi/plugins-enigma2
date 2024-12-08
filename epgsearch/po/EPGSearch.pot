@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 11:30+0200\n"
+"POT-Creation-Date: 2024-12-08 14:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,9 +58,6 @@ msgstr ""
 msgid "Choice list RED Button"
 msgstr ""
 
-msgid "Choosing an encoding. \"UTF-8\" to search for EPG cyrillic."
-msgstr ""
-
 msgid "Clear history"
 msgstr ""
 
@@ -69,6 +66,13 @@ msgid "Could not read AutoTimer timer list: %s"
 msgstr ""
 
 msgid "Custom search"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+#, python-format
+msgid "Delete text '%s' from history?"
 msgstr ""
 
 msgid "Display name service as in bouquets"
@@ -89,16 +93,10 @@ msgstr ""
 msgid "Edit & search"
 msgstr ""
 
-msgid "Encoding Search to EPG"
-msgstr ""
-
 msgid "Enter text to search for"
 msgstr ""
 
 msgid "Export selected as AutoTimer"
-msgstr ""
-
-msgid "Delete text '%s' from history?"
 msgstr ""
 
 msgid "History"
@@ -161,6 +159,9 @@ msgstr ""
 msgid "Partnerbox Entries"
 msgstr ""
 
+msgid "Save"
+msgstr ""
+
 msgid "Save search as AutoTimer"
 msgstr ""
 
@@ -171,9 +172,6 @@ msgid "Search EPG by title event"
 msgstr ""
 
 msgid "Search event in EPG"
-msgstr ""
-
-msgid "Search for TMDb info"
 msgstr ""
 
 msgid "Search only bouquets"

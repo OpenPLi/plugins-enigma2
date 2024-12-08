@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 EPGSearch plugin Turkish Locale\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-12 14:32+0200\n"
+"POT-Creation-Date: 2024-12-08 14:24+0100\n"
 "PO-Revision-Date: 2014-11-22 20:47+0100\n"
 "Last-Translator: Zülfikar VEYİSOĞLU <z.veyisoglu@hobiagaci.com>\n"
 "Language-Team: http://hobiagaci.com <z.veyisoglu@hobiagaci.com>\n"
@@ -55,9 +55,6 @@ msgstr ""
 msgid "Choice list RED Button"
 msgstr ""
 
-msgid "Choosing an encoding. \"UTF-8\" to search for EPG cyrillic."
-msgstr ""
-
 #, fuzzy
 msgid "Clear history"
 msgstr "Geçmiş kaydı yok"
@@ -67,6 +64,13 @@ msgid "Could not read AutoTimer timer list: %s"
 msgstr "AutoTimer zamanlayıcı listesi okunamıyor : %s"
 
 msgid "Custom search"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+#, python-format
+msgid "Delete text '%s' from history?"
 msgstr ""
 
 msgid "Display name service as in bouquets"
@@ -91,18 +95,11 @@ msgstr "EPG Arama"
 msgid "Edit & search"
 msgstr "EPG Arama"
 
-#, fuzzy
-msgid "Encoding Search to EPG"
-msgstr "EPG'de ara"
-
 msgid "Enter text to search for"
 msgstr "Arama metnini girin"
 
 msgid "Export selected as AutoTimer"
 msgstr "Seçililenleri AutoTimer olarak dışarı ver"
-
-msgid "Delete text '%s' from history?"
-msgstr ""
 
 msgid "History"
 msgstr "Geçmiş"
@@ -165,6 +162,9 @@ msgstr ""
 msgid "Partnerbox Entries"
 msgstr ""
 
+msgid "Save"
+msgstr ""
+
 msgid "Save search as AutoTimer"
 msgstr "Aramayı AutoTimer olarak kaydet"
 
@@ -177,9 +177,6 @@ msgstr ""
 #, fuzzy
 msgid "Search event in EPG"
 msgstr "EPG'de ara"
-
-msgid "Search for TMDb info"
-msgstr ""
 
 msgid "Search only bouquets"
 msgstr ""

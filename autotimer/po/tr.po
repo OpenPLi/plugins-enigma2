@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 AutoTimer Plugin Turkish Locale\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 08:01+0100\n"
+"POT-Creation-Date: 2024-12-08 14:24+0100\n"
 "PO-Revision-Date: 2012-02-17 15:38+0100\n"
 "Last-Translator: \n"
 "Language-Team: http://hobiagaci.com <z.veyisoglu@hobiagaci.com>\n"
@@ -32,6 +32,9 @@ msgstr ""
 msgid ""
 "\n"
 "With 'Info' can be edited existing text from \"Match title\" and inserted to \"Description\"."
+msgstr ""
+
+msgid " (Short and Extended)"
 msgstr ""
 
 msgid " (only services from bouquets when use \"favorites description match\")."
@@ -340,9 +343,6 @@ msgstr ""
 msgid "Do you really want to delete %s?"
 msgstr "%s 'i silmek istediğinizden emin misiniz?"
 
-msgid "EPG encoding"
-msgstr "EPG kodlaması"
-
 msgid "Edit AutoTimer"
 msgstr "Otomatik zamanlayıcı düzenle"
 
@@ -547,6 +547,9 @@ msgstr "Mevcut zamanlayıcıyı içeri al"
 
 msgid "Import from EPG"
 msgstr "EPG'den içeri al"
+
+msgid "In case of changes, a GUI restart is required to apply the changes."
+msgstr ""
 
 msgid "Include"
 msgstr "İçer"

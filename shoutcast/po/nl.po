@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shoutcast\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-11 10:58+0200\n"
+"POT-Creation-Date: 2024-12-08 14:27+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Tech <tech@openpli.org>\n"
 "Language-Team: OpenPLi <translators@openpli.org>\n"
@@ -91,6 +91,9 @@ msgstr "Maak voor elke stream een directory"
 msgid "Disable Picture in Picture"
 msgstr ""
 
+msgid "Do you really want to exit SHOUTcast?"
+msgstr ""
+
 msgid "Do you really want to stop the recording?"
 msgstr "Wil je de opname echt stoppen?"
 
@@ -125,10 +128,6 @@ msgstr "Genres"
 #, python-format
 msgid "Getting %s"
 msgstr "Ontvang %s"
-
-#, fuzzy, python-format
-msgid "Getting SHOUTcast genre list for %s..."
-msgstr "SHOUTcast genre lijst ophalen..."
 
 msgid "Getting SHOUTcast genre list..."
 msgstr "SHOUTcast genre lijst ophalen..."
@@ -183,6 +182,10 @@ msgstr "Opname lokatie"
 
 msgid "Recording stream station"
 msgstr "Stream-station opnemen"
+
+#, python-format
+msgid "Recording: %s"
+msgstr ""
 
 msgid "Reload station list:"
 msgstr "Stationslijst herladen:"

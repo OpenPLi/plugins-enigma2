@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shoutcast\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-11 12:34+0200\n"
+"POT-Creation-Date: 2024-12-08 14:27+0100\n"
 "PO-Revision-Date: 2016-12-28 15:19+0200\n"
 "Last-Translator: Vytenis P.\n"
 "Language-Team: Vytenis P. <vyteniui@gmail.com>\n"
@@ -93,6 +93,9 @@ msgstr "Sukurti katalogą kiekvienam srautui"
 msgid "Disable Picture in Picture"
 msgstr "Išjungti vaizdą vaizde (PiP)"
 
+msgid "Do you really want to exit SHOUTcast?"
+msgstr ""
+
 msgid "Do you really want to stop the recording?"
 msgstr "Ar tikrai norite nutraukti įrašymą?"
 
@@ -127,10 +130,6 @@ msgstr "Žanrai"
 #, python-format
 msgid "Getting %s"
 msgstr "Įkeliama %s"
-
-#, python-format
-msgid "Getting SHOUTcast genre list for %s..."
-msgstr "Įkeliamas SHOUTcast žanrų sąrašas %s..."
 
 msgid "Getting SHOUTcast genre list..."
 msgstr "Įkeliamas SHOUTcast žanrų sąrašas..."
@@ -185,6 +184,10 @@ msgstr "Įrašo vieta:"
 
 msgid "Recording stream station"
 msgstr "Įrašomo srauto stotis"
+
+#, python-format
+msgid "Recording: %s"
+msgstr ""
 
 msgid "Reload station list:"
 msgstr "Stočių sąrašą įkelti iš naujo:"

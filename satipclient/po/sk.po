@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 11:30+0200\n"
+"POT-Creation-Date: 2024-12-08 14:24+0100\n"
 "PO-Revision-Date: 2019-10-24 20:10\n"
 "Last-Translator: Ladislav Zilizi, zilizila@gmail.com\n"
 "Language-Team: \n"
@@ -20,9 +20,6 @@ msgstr ""
 
 msgid "Auto setup"
 msgstr ""
-
-msgid "Cancel"
-msgstr "Zrušiť"
 
 msgid "DVB-S"
 msgstr "DVB-S"
@@ -72,9 +69,6 @@ msgstr "Žiadny vTuner nebol nájdený."
 #, python-format
 msgid "Not found '%s' ..."
 msgstr ""
-
-msgid "OK"
-msgstr "OK"
 
 msgid "Port"
 msgstr ""
@@ -126,9 +120,6 @@ msgstr "SAT>IP Server nebol nájdený."
 msgid "Save"
 msgstr "Uložiť"
 
-msgid "Select"
-msgstr "Vybrať"
-
 msgid "Select tuner and press: Yellow/OK - 'Auto setup' or Blue - 'Manual setup'. Menu - vtuner.conf."
 msgstr ""
 
@@ -141,8 +132,8 @@ msgstr "Kapacita servera je naplnená."
 msgid "Server name"
 msgstr ""
 
-msgid "Starting..."
-msgstr "Spustenie..."
+msgid "Set all the settings back as they were"
+msgstr ""
 
 #, python-format
 msgid "TUNER TYPE : %s"
@@ -151,6 +142,9 @@ msgstr "TUNER TYP : %s"
 #, python-format
 msgid "TYPE : %s"
 msgstr "TYP : %s"
+
+msgid "Toggle Configuration Mode or AutoDisqc"
+msgstr ""
 
 #, fuzzy
 msgid "Tuner type"

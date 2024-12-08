@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 - epgsearch\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-12 14:32+0200\n"
+"POT-Creation-Date: 2024-12-08 14:24+0100\n"
 "PO-Revision-Date: 2021-07-10 10:32+0200\n"
 "Last-Translator: Frenske <voorzitter@openpli.org>\n"
 "Language-Team: <Benny.DeTandt@gmail.com>\n"
@@ -59,9 +59,6 @@ msgstr "EPGSearch keuzelijst"
 msgid "Choice list RED Button"
 msgstr "Keuzelijst Rode toets"
 
-msgid "Choosing an encoding. \"UTF-8\" to search for EPG cyrillic."
-msgstr "Met deze optie kunt u een encoding aangeven. U kunt kiezen uit UTF-8 om cyrillisch de EPG te doorzoeken en voor ISO8859-15."
-
 msgid "Clear history"
 msgstr "Wis de inhoud van de historie"
 
@@ -71,6 +68,13 @@ msgstr "Kan AutoTimer timer lijst niet lezen : %s"
 
 msgid "Custom search"
 msgstr "Vrij zoeken"
+
+msgid "Delete"
+msgstr ""
+
+#, python-format
+msgid "Delete text '%s' from history?"
+msgstr ""
 
 msgid "Display name service as in bouquets"
 msgstr "Toon de zendernaam als in het bouquet"
@@ -92,17 +96,11 @@ msgstr "Stel de EPGSearch in."
 msgid "Edit & search"
 msgstr "Vrij zoeken"
 
-msgid "Encoding Search to EPG"
-msgstr "Encoding om de EPG te doorzoeken"
-
 msgid "Enter text to search for"
 msgstr "Voer te zoeken tekst in:"
 
 msgid "Export selected as AutoTimer"
 msgstr "Exporteer het geselecteerde als AutoTimer"
-
-msgid "Delete text '%s' from history?"
-msgstr ""
 
 msgid "History"
 msgstr "Historiek"
@@ -166,6 +164,9 @@ msgstr "Open de selectie in IMBd"
 msgid "Partnerbox Entries"
 msgstr "Partnerbox item"
 
+msgid "Save"
+msgstr ""
+
 msgid "Save search as AutoTimer"
 msgstr "Bewaar dit resultaat als AutoTimer"
 
@@ -177,9 +178,6 @@ msgstr "Doorzoek de EPG op titel van het programma"
 
 msgid "Search event in EPG"
 msgstr "Zoek het huidige programma in de EPG"
-
-msgid "Search for TMDb info"
-msgstr "Zoek naar TMDb informatie"
 
 msgid "Search only bouquets"
 msgstr "Doorzoek alléén de bouquetten"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SHOUTcast\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-11 10:58+0200\n"
+"POT-Creation-Date: 2024-12-08 14:27+0100\n"
 "PO-Revision-Date: 2018-07-31 21:30+0200\n"
 "Last-Translator: Pr2 <dummy@dummy.com>\n"
 "Language-Team: OpenPLi\n"
@@ -25,7 +25,7 @@ msgid ""
 "Press OK to try again..."
 msgstr ""
 "%s\n"
-"Appuyez sur OK pour recommencer..."
+"Appuyez sur OK pour réessayer."
 
 #, python-format
 msgid ""
@@ -33,7 +33,7 @@ msgid ""
 "Press green-button to try again..."
 msgstr ""
 "%s\n"
-"Appuyez sur le bouton vert pour essayer à nouveau..."
+"Appuyez sur le bouton vert pour réessayer."
 
 msgid ">= 128 kbps"
 msgstr ">= 128 kbps"
@@ -51,13 +51,13 @@ msgid "Activate Picture in Picture"
 msgstr "Activer l'incrustation d'image"
 
 msgid "Add current playing stream to favorite"
-msgstr "Ajouter la liste de lecture sélectionnée au favori"
+msgstr "Ajouter la station actuelle aux favoris"
 
 msgid "Add current selected genre to favorite"
-msgstr "Ajouter le genre sélectionné au favori"
+msgstr "Ajouter le genre sélectionné aux favoris"
 
 msgid "Add current selected station to favorite"
-msgstr "Ajouter la station sélectionnée au favori"
+msgstr "Ajouter la station sélectionnée aux favoris"
 
 msgid "Add sequence number to output file"
 msgstr "Ajouter un numéro de séquence au fichier créé"
@@ -77,41 +77,44 @@ msgid "Cancel"
 msgstr "Annuler"
 
 msgid "Choose action:"
-msgstr "Choisissez l’action :"
+msgstr "Choisissez l’action"
 
 msgid "Config"
 msgstr "Configuration"
 
 msgid "Coverheight:"
-msgstr "Hauteur pochette:"
+msgstr "Hauteur pochette"
 
 msgid "Coverwidth:"
-msgstr "Largeur pochette:"
+msgstr "Largeur pochette"
 
 msgid "Create a directory for each stream"
-msgstr "Créer un répertoire pour chaque stream"
+msgstr "Créer un dossier pour chaque station"
 
 msgid "Disable Picture in Picture"
 msgstr "Désactiver l'incrustation d'image"
+
+msgid "Do you really want to exit SHOUTcast?"
+msgstr "Quitter SHOUTcast?"
 
 msgid "Do you really want to stop the recording?"
 msgstr "Voulez-vous vraiment arrêter l'enregistrement?"
 
 msgid "Enter in minutes (0 means unlimited)"
-msgstr "Entré en minutres (0 signifie infini)"
+msgstr "Entrez la durée en minutes (0 signifie infini)"
 
 msgid "Enter new name for favorite item"
-msgstr "Entrer un nouveau nom du favori"
+msgstr "Entrez un nouveau nom pour votre favori"
 
 msgid "Enter text to search for"
-msgstr "Entre le texte à rechercher"
+msgstr "Entrez le texte à rechercher"
 
 #, python-format
 msgid "Error create directory %s!"
-msgstr "Échec de la création du répertoire %s!"
+msgstr "Le dossier %s n'a pas pu être créé!"
 
 msgid "Error downloading cover..."
-msgstr "Erreur en téléchargeant la pochette..."
+msgstr "Erreur en téléchargeant la pochette."
 
 msgid "Favorite list"
 msgstr "Liste des favoris"
@@ -120,7 +123,7 @@ msgid "Favorites"
 msgstr "Favoris"
 
 msgid "First play streaming!"
-msgstr "Première lecture en streaming !"
+msgstr "Sélectionnez d'abord une station!"
 
 msgid "Genres"
 msgstr "Genres"
@@ -129,42 +132,38 @@ msgstr "Genres"
 msgid "Getting %s"
 msgstr "Réception de %s"
 
-#, python-format
-msgid "Getting SHOUTcast genre list for %s..."
-msgstr "Réception de la liste des genres de SHOUTcast pour %s..."
-
 msgid "Getting SHOUTcast genre list..."
-msgstr "Réception de la liste des genres SHOUTcast..."
+msgstr "Récupérer la liste des genres SHOUTcast..."
 
 #, python-format
 msgid ""
 "Getting streaming data from\n"
 "%s"
 msgstr ""
-"Réception des données de streaming depuis\n"
+"Récupérer les données pour streaming\n"
 "%s"
 
 msgid ""
 "Got 0 genres. Could be a network problem.\n"
 "Please try again..."
 msgstr ""
-"Réception de 0 genre. Peut-être un problème réseau?\n"
+"Reçu 0 genres. Peut-être un problème réseau?\n"
 "Merci de réessayer..."
 
 msgid "Hide"
 msgstr "Cacher"
 
 msgid "Invalid Location"
-msgstr "Localisation non valide"
+msgstr "Chemin d'accès non valide"
 
 msgid "Menu PiP"
 msgstr "Menu PiP"
 
 msgid "Move Picture in Picture"
-msgstr "Déplacer l'incrustation d'image"
+msgstr "Aligner l'image TV"
 
 msgid "No streaming data found..."
-msgstr "Aucune donnée de streaming trouvée..."
+msgstr "Aucune donnée de streaming trouvée."
 
 msgid "OK"
 msgstr "OK"
@@ -173,7 +172,9 @@ msgid "Off"
 msgstr "Off"
 
 msgid "Only running streamings can be recorded!"
-msgstr "Seul les streams en cours peuvent être enregistrés!"
+msgstr ""
+"Tout d'abord, lancez une station!\n"
+"Ensuite, demarrez l'enregistrement."
 
 msgid "Record"
 msgstr "Enregistrer"
@@ -182,16 +183,20 @@ msgid "Recording length"
 msgstr "Longueur de l'enregistrement"
 
 msgid "Recording location:"
-msgstr "Localisation des enregistrements:"
+msgstr "Dossier pour enregistrements"
 
 msgid "Recording stream station"
-msgstr "Enregistrement d'une radion streamée"
+msgstr "Enregistrement en cours"
+
+#, python-format
+msgid "Recording: %s"
+msgstr "Enregistrement: %s"
 
 msgid "Reload station list:"
-msgstr "Relire la liste des stations:"
+msgstr "Relire la liste des stations"
 
 msgid "Rip to single file, name is timestamped"
-msgstr "Ripper dans un fichier unique, le nom est horodaté"
+msgstr "Enregistrer dans un seul fichier, horodaté"
 
 msgid "SHOUTcast genre list"
 msgstr "Liste des genres SHOUTcast"
@@ -211,13 +216,13 @@ msgid "Searching SHOUTcast for %s..."
 msgstr "Recherche sur SHOUTcast pour %s..."
 
 msgid "Select record path for streamripper"
-msgstr "Sélectionner le chemin d'enregistrement pour streamripper"
+msgstr "Sélectionner le dossier d'enregistrement"
 
 msgid "Show cover:"
-msgstr "Afficher pochette:"
+msgstr "Affichage pochette"
 
 msgid "Show in extension menu:"
-msgstr "Afficher dans le menu extensions:"
+msgstr "Afficher dans le menu extensions"
 
 #, python-format
 msgid "Station: %s"
@@ -227,13 +232,13 @@ msgid "Stations"
 msgstr "Stations"
 
 msgid "Stop record"
-msgstr "Arrêter enregistrement"
+msgstr "Arrêter enreg."
 
 msgid "Stream stopped playing, playback of stream stopped!"
-msgstr "La lecture du stream a été interrompue, lecture du stream arrêté!"
+msgstr "Le stream a été interrompu!"
 
 msgid "Streaming rate:"
-msgstr "Taux de streaming:"
+msgstr "Qualité (bit rate)"
 
 #, python-format
 msgid "Title: %s"
@@ -243,7 +248,7 @@ msgid "Title: n/a"
 msgstr "Titre: p/a"
 
 msgid "Zap focus to Picture in Picture"
-msgstr "Zapper dans l’image dans l’image (PiP)"
+msgstr "Zapper sur l’image dans l’image (PiP)"
 
 msgid "Zap focus to main screen"
 msgstr "Zapper sur l’écran principal"
@@ -262,17 +267,17 @@ msgid "genre %s"
 msgstr "genre: %s"
 
 msgid "listen to shoutcast internet-radio"
-msgstr "écouter une radio SHOUTcast internet"
+msgstr "Écouter la radio Internet"
 
 msgid "remove current selected favorite"
-msgstr "supprimer la liste des favoris courante"
+msgstr "Supprimer le favori courant"
 
 msgid "rename current selected favorite"
-msgstr "renommer la liste des favoris courante"
+msgstr "Renommer le favori courant"
 
 #, python-format
 msgid "search-criteria %s"
 msgstr "critère de recherche: %s"
 
 msgid "streamripper not installed!"
-msgstr "streamripper non installé !"
+msgstr "streamripper non installé!"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 - shoutcast\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-11 10:58+0200\n"
+"POT-Creation-Date: 2024-12-08 14:27+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Spaeleus <spaeleus@croci.org>\n"
 "Language-Team: www.linsat.net <spaeleusòcroci.org>\n"
@@ -92,6 +92,9 @@ msgstr "Creare una directory per ogni stream"
 msgid "Disable Picture in Picture"
 msgstr ""
 
+msgid "Do you really want to exit SHOUTcast?"
+msgstr ""
+
 msgid "Do you really want to stop the recording?"
 msgstr "Arrestare la registrazione?"
 
@@ -126,10 +129,6 @@ msgstr "Generi"
 #, python-format
 msgid "Getting %s"
 msgstr "Caricamento %s"
-
-#, fuzzy, python-format
-msgid "Getting SHOUTcast genre list for %s..."
-msgstr "Caricamento elenco generi SHOUTcast in corso..."
 
 msgid "Getting SHOUTcast genre list..."
 msgstr "Caricamento elenco generi SHOUTcast in corso..."
@@ -183,6 +182,10 @@ msgstr "Destinazione registrazioni:"
 msgid "Recording stream station"
 msgstr "Registrazione stream in corso"
 
+#, python-format
+msgid "Recording: %s"
+msgstr ""
+
 msgid "Reload station list:"
 msgstr "Ricaricare elenco stazioni:"
 
@@ -192,9 +195,8 @@ msgstr "Salvare in un unico file"
 msgid "SHOUTcast genre list"
 msgstr "Elenco generi SHOUTcast"
 
-#, fuzzy
 msgid "SHOUTcast setup"
-msgstr "Elenco generi SHOUTcast"
+msgstr "SHOUTcast configurazione"
 
 #, python-format
 msgid "SHOUTcast station list for %s"
@@ -256,7 +258,7 @@ msgstr "ogni tre minuti"
 
 #, python-format
 msgid "genre %s"
-msgstr "Genere %s"
+msgstr "genere %s"
 
 msgid "listen to shoutcast internet-radio"
 msgstr "Ascoltare shoutcast radio su internet"
