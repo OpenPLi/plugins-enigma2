@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Enigma2 Autotimer plugin\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-08 14:24+0100\n"
-"PO-Revision-Date: 2024-03-17 08:21+0100\n"
+"PO-Revision-Date: 2024-12-13 10:46+0100\n"
 "Last-Translator: IMS <ims@openpli.org>\n"
 "Language-Team: PLi <ims21@users.sourceforge.net>\n"
 "Language: cs_CZ\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.5\n"
 
 msgid ""
 "\n"
@@ -43,10 +43,10 @@ msgstr ""
 "Pomocí 'Info' může být upraven existující text z \"Hledaný název/text\" a vložen do \"Název časovače\"."
 
 msgid " (Short and Extended)"
-msgstr ""
+msgstr " (krátký a rozšířený)"
 
 msgid " (only services from bouquets when use \"favorites description match\")."
-msgstr " (hledat pouze v popisu stanic z přehledů zvolte \"V popisu jen v přehledech\"."
+msgstr " (pro hledání pouze v popisu stanic z přehledů zvolte \"V popisu jen v přehledech\"."
 
 msgid " - AutoTimer "
 msgstr " - AutoTimer "
@@ -223,7 +223,7 @@ msgid "Bouquets"
 msgstr "Přehledy"
 
 msgid "By enabling this events will not be matched if they don't occur on certain dates."
-msgstr "Povolením tohoto nebudou události odpovídat, jestliže se nevyskytují v určitých datových termínech"
+msgstr "Budou se vyhledávat pouze pořady spadající do zadaného časového intervalu."
 
 msgid "By enabling this you will be notified about similar timers added during automated polling. There is no intelligence involved, so it might bother you about the same conflict over and over."
 msgstr "Při zapnutí budete při automatickém dotazování dostávat informáce o podobných časovačích. Nepoužívá se zde žádná logika, takže Vás pak může ten samý konflikt obtěžovat stále dokola"
@@ -232,7 +232,7 @@ msgid "By enabling this you will be notified about timer conflicts found during 
 msgstr "Při zapnutí budete při automatickém dotazování dostávat informáce o konfliktech časovače. Nepoužívá se zde žádná logika, takže Vás pak může ten samý konflikt obtěžovat stále dokola."
 
 msgid "By enabling this you will be notified about timer(s) added during automated polling. Just not in standby mode."
-msgstr "Povolením tohoto nastavení budete upozorněni na časovač(e) přidané během automatizovaného zjišťování.  Nikoliv ale ve standby."
+msgstr "Při povolení budete upozorněni na časovač(e) přidané během automatizovaného zjišťování. Nikoliv ale ve standby."
 
 msgid "Cancel"
 msgstr "Zavřít"
@@ -441,7 +441,7 @@ msgstr ""
 "  Událostí vynecháno: %s"
 
 msgid "First day to match events. No event that begins before this date will be matched."
-msgstr "První den odpovídající události. Událost začínající před tímto datem nevyhoví."
+msgstr "První den pro vyhledávání pořadu. Žádný pořad, který začíná před tímto datem, nebude přidán do výsledků vyhledávání."
 
 #, python-format
 msgid ""
@@ -479,7 +479,7 @@ msgid "Here you can specify whether simultaneous timers of the same program can 
 msgstr "Můžete stanovit, zda lze vytvořit souběžné časovače stejného programu. To umožní současný záznam programu s různými rozlišeními. (např. SD program a HD program)."
 
 msgid "IPTV stream use only this service for search"
-msgstr ""
+msgstr "IPTV stream použije pro vyhledávání pouze tuto službu"
 
 msgid "If 0, the popup will remain open."
 msgstr "Pokud je 0, zůstane vyskakovací okno otevřené."
@@ -519,7 +519,7 @@ msgstr "Pokud je tato volba zapnuta, zkontroluje seznam časovačů, konfliktní
 
 #, python-format
 msgid "If this is enabled an existing timer will also be considered recording an event if it records at least 80% of the it."
-msgstr "Při zapnutí této funkce se bude existující časovač považovat za nahrávající, jestliže nahraje alespoň 80% programu."
+msgstr "Při povolení bude stávající časovač považován také za záznam události, pokud zaznamená alespoň 80% její délky."
 
 msgid "If this is enabled, up on the MENU button in the multi-EPG will list of choices for AutoTimer."
 msgstr "Jestliže je povoleno, v menu v multi-EPG se zobrazí seznam možností pro AutoTimer."
@@ -549,7 +549,7 @@ msgid "Import from EPG"
 msgstr "Importovat z EPG"
 
 msgid "In case of changes, a GUI restart is required to apply the changes."
-msgstr ""
+msgstr "Provedené změny se projeví až po restartu GUI."
 
 msgid "Include"
 msgstr "Včetně"
@@ -567,7 +567,7 @@ msgid "Label series"
 msgstr "Označte série"
 
 msgid "Last day to match events. Events have to begin before this date to be matched."
-msgstr "Poslední den odpovídající události. Událost musí začínat před tímto datem, jinak nevyhoví."
+msgstr "Poslední den pro vyhledávání pořadu. Pořad musí začínat před tímto datem, aby byl přidán do výsledku vyhledávání."
 
 msgid "Location"
 msgstr "Umístění"
@@ -646,10 +646,10 @@ msgid "None"
 msgstr "Žádné"
 
 msgid "Not after"
-msgstr "Ne po"
+msgstr "Ne později než"
 
 msgid "Not before"
-msgstr "Ne před"
+msgstr "Ne dříve než"
 
 msgid "Not found xml config file!"
 msgstr "Nenalezen xml konfigurační soubor!"
@@ -787,7 +787,7 @@ msgid "Restrict \"after event\" to a certain timespan?"
 msgstr "Omezit \"po skončení\" na určitý časový úsek?"
 
 msgid "Restrict to events on certain dates"
-msgstr "Omezit události na určité datum"
+msgstr "Omezit hledání pořadů na určitý rozsah dnů"
 
 msgid "Restriction to certain bouquets (edit in services menu)"
 msgstr "Omezení na některé přehledy (upravit v nabídce programů)"
