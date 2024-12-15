@@ -991,6 +991,20 @@ class EPGSearch(EPGSelection):
 			l.recalcEntrySize()
 			l.list = ret
 			l.l.setList(ret)
+			t = int(time())
+			histminutes = 0
+			if hasattr(config.epg, "histminutes"):
+				histminutes = int(config.epg.histminutes.value) * 60
+			epg_time = t - histminutes
+			if t != epg_time:
+				idx = 0
+				for x in l.list:
+					idx += 1
+					if t < x[2] + x[3]:
+						break
+				l.instance.moveSelectionTo(idx - 1)
+			else:
+				l.instance.moveSelectionTo(1)
 
 	def sortEPGList(self, epglist):
 		global BouquetChannelListList, IptvBouquetChannelListList
