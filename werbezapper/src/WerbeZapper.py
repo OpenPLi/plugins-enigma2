@@ -304,7 +304,8 @@ class WerbeZapper(Screen):
 				title=_("How many minutes to wait until zapping back?"),
 				text=num,
 				maxSize=False,
-				type=Input.NUMBER
+				type=Input.NUMBER,
+				maxValue=1440
 			)
 			return
 
