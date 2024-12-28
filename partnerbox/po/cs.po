@@ -552,7 +552,7 @@ msgid "Toggle status (on/off)"
 msgstr "Přepnout stav (zap/vyp)"
 
 msgid "Tue"
-msgstr "Di"
+msgstr "Út"
 
 msgid "Tuesday"
 msgstr "Úterý"
@@ -623,7 +623,7 @@ msgid "disabled"
 msgstr "zakázáno"
 
 msgid "do nothing"
-msgstr "nic nedělat"
+msgstr "nedělat nic"
 
 msgid "done!"
 msgstr "dokončeno!"
