@@ -28,6 +28,7 @@ from base64 import encodebytes
 import xml.etree.cElementTree
 from urllib.parse import unquote, urlparse, urlunparse
 import base64
+import re
 
 CurrentIP = None
 remote_timer_list = None
@@ -232,10 +233,9 @@ class E2Timer:
 
 def FillE2TimerList(xmlstring, sreference=None):
 	E2TimerList = []
-	try:
-		root = xml.etree.cElementTree.fromstring(xmlstring)
-	except:
-		return E2TimerList
+	xmlstring = xmlstring.decode("utf-8", errors="ignore")
+	xmlstring = re.sub(r'[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]', '', xmlstring)
+	root = xml.etree.cElementTree.fromstring(xmlstring)
 	if sreference is None:
 		sreference = None
 	else:
