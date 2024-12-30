@@ -883,9 +883,9 @@ class AutoTimer:
 					if newEntry in (recordHandler.timer_list[:] + recordHandler.processed_timers[:]):
 						new += 1
 						if isnewFilterEntry:
-							self.addToSearchLogfile(newEntry, "++", simulateOnly)
+							self.addToSearchLogfile(newEntry, "++", simulateOnly, timer.name, match)
 						else:
-							self.addToSearchLogfile(newEntry, "+", simulateOnly)
+							self.addToSearchLogfile(newEntry, "+", simulateOnly, timer.name, match)
 						newEntry.extdesc = extdesc
 						timerdict[serviceref].append(newEntry)
 
@@ -996,7 +996,7 @@ class AutoTimer:
 
 # Supporting functions
 
-	def addToSearchLogfile(self, timerEntry, entryType, simulateOnlyValue=False):
+	def addToSearchLogfile(self, timerEntry, entryType, simulateOnlyValue=False, timerName="", matchTxt=""):
 		if config.plugins.autotimer.searchlog_write.value and not simulateOnlyValue:
 			#write eventname totextfile
 			logpath = config.plugins.autotimer.searchlog_path.value
@@ -1008,6 +1008,7 @@ class AutoTimer:
 			log_txt += str(strftime('%d.%m., %H:%M', localtime(timerEntry.begin)))
 			log_txt += ' - ' + timerEntry.service_ref.getServiceName()
 			log_txt += ' - "' + str(timerEntry.name) + '"\n'
+			log_txt += ' > ' + ("   %s (%s)\n") % (timerName, matchTxt) # do not change ' > ' (See parseEPGCallback in plugin.py)
 			file_search_log.write(log_txt)
 			file_search_log.close()
 
