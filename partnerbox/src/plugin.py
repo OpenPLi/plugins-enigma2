@@ -307,7 +307,7 @@ class RemoteTimer(Screen):
 	global CurrentParnerBoxName
 	if HD:
 		skin = """
-			<screen name="RemoteTimer" position="center,center" size="560,455" title="RemoteTimer Timerlist">
+			<screen name="RemoteTimer" position="center,center" size="560,510" title="RemoteTimer Timerlist">
 				<ePixmap pixmap="skin_default/buttons/red.png" position="0,0" size="140,40" alphatest="on"/>
 				<ePixmap pixmap="skin_default/buttons/green.png" position="140,0" size="140,40" alphatest="on"/>
 				<ePixmap pixmap="skin_default/buttons/yellow.png" position="280,0" size="140,40" alphatest="on"/>
@@ -317,12 +317,13 @@ class RemoteTimer(Screen):
 				<widget name="key_yellow" position="280,0" zPosition="1" size="140,40" font="Regular;17" halign="center" valign="center" backgroundColor="#a08500" transparent="1"/>
 				<widget name="key_blue" position="420,0" zPosition="1" size="140,40" font="Regular;17" halign="center" valign="center" backgroundColor="#18188b" transparent="1"/>
 				<widget name="text" position="0,60" zPosition="1" size="560,350" font="Regular;20" halign="center" valign="center" />
-				<widget name="textok" position="0,430" zPosition="1" size="560,25" font="Regular;20" halign="center" valign="center" />
-				<widget name="timerlist" position="0,60" zPosition="2" size="560,350" scrollbarMode="showOnDemand" foregroundColorSelected="#ffd700" />
+				<widget name="textok" position="0,480" zPosition="1" size="560,25" font="Regular;20" halign="center" valign="center" />
+				<widget name="timerlist" position="0,60" zPosition="2" size="560,342" scrollbarMode="showOnDemand" foregroundColorSelected="#ffd700" />
+				<widget name="description" position="0,406" zPosition="1" size="560,69" font="Regular;20" halign="left" valign="top"/>
 			</screen>"""
 	else:
 		skin = """
-			<screen name="RemoteTimer" position="center,center" size="560,455" title="RemoteTimer Timerlist">
+			<screen name="RemoteTimer" position="center,center" size="560,505" title="RemoteTimer Timerlist">
 				<ePixmap pixmap="skin_default/buttons/red.png" position="0,0" size="140,40" alphatest="on"/>
 				<ePixmap pixmap="skin_default/buttons/green.png" position="140,0" size="140,40" alphatest="on"/>
 				<ePixmap pixmap="skin_default/buttons/yellow.png" position="280,0" size="140,40" alphatest="on"/>
@@ -332,8 +333,9 @@ class RemoteTimer(Screen):
 				<widget name="key_yellow" position="280,0" zPosition="1" size="140,40" font="Regular;17" halign="center" valign="center" backgroundColor="#a08500" transparent="1"/>
 				<widget name="key_blue" position="420,0" zPosition="1" size="140,40" font="Regular;17" halign="center" valign="center" backgroundColor="#18188b" transparent="1"/>
 				<widget name="text" position="0,60" zPosition="1" size="560,350" font="Regular;20" halign="center" valign="center" />
-				<widget name="textok" position="0,430" zPosition="1" size="560,25" font="Regular;20" halign="center" valign="center" />
-				<widget name="timerlist" position="0,60" zPosition="2" size="560,350" scrollbarMode="showOnDemand" />
+				<widget name="textok" position="0,470" zPosition="1" size="560,25" font="Regular;20" halign="center" valign="center" />
+				<widget name="timerlist" position="0,60" zPosition="2" size="560,342" scrollbarMode="showOnDemand" />
+				<widget name="description" position="0,405" zPosition="1" size="560,60" font="Regular;17" halign="left" valign="top"/>
 			</screen>"""
 	timerlist = []
 
@@ -347,6 +349,7 @@ class RemoteTimer(Screen):
 		self["key_blue"] = Label()
 		self["text"] = Label(_("Getting Partnerbox Information..."))
 		self["textok"] = Label()
+		self["description"] = Label()
 		self.onLayoutFinish.append(self.startRun)
 		self.E2TimerList = []
 		self["actions"] = ActionMap(["WizardActions", "DirectionActions", "ColorActions", "EPGSelectActions"],
@@ -373,7 +376,12 @@ class RemoteTimer(Screen):
 		self.oldtype = 0
 		self.Locations = []
 		self["timerlist"] = E2TimerMenu(self.enigma_type)
+		self["timerlist"].onSelectionChanged.append(self.selectionChanged)
 		self.toggleButtonState()
+
+	def selectionChanged(self, event):
+		if event:
+			self["description"].setText(event.description)
 
 	def toggleButtonState(self):
 		if self["timerlist"].currentSelection is not None:
