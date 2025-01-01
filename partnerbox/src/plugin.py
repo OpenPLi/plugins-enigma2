@@ -1648,6 +1648,12 @@ class E2TimerMenu(GUIComponent, object):
 		self.iconRepeat = LoadPixmap(resolveFilename(SCOPE_SKIN_IMAGE, "skin_default/icons/timer_rep.svg"))
 		self.iconZapped = LoadPixmap(resolveFilename(SCOPE_SKIN_IMAGE, "skin_default/icons/timer_zap.svg"))
 		self.iconDisabled = LoadPixmap(resolveFilename(SCOPE_SKIN_IMAGE, "skin_default/icons/timer_off.svg"))
+		self.onSelectionChanged = []
+
+	def _selectionChanged(self):
+		current = self.getCurrent()
+		for callback in self.onSelectionChanged:
+			callback(current)
 
 	def buildEntry(self, timer):
 		width = self.l.getItemSize().width()
@@ -1810,6 +1816,7 @@ class E2TimerMenu(GUIComponent, object):
 
 	def postWidgetCreate(self, instance):
 		instance.setContent(self.l)
+		instance.selectionChanged.get().append(self._selectionChanged)
 
 	def preWidgetRemove(self, instance):
 		instance.setContent(None)
