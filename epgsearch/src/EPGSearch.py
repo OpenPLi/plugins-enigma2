@@ -680,7 +680,7 @@ class EPGSearch(EPGSelection):
 
 	def onSelectionChanged(self):
 		cur = self["list"].getCurrent()
-		self["Service"].newService(cur and cur[1] or None)
+		self["Service"].newService(cur and eServiceReference(str(cur[1])) or None)
 		self["Event"].newEvent(cur and cur[0] or None)
 		EPGSelection.onSelectionChanged(self)
 		if PartnerBoxZapRepIcons:
