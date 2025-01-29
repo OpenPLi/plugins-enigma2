@@ -343,10 +343,10 @@ class DreamExplorerII(Screen):
 				self.selectedDir = self["filelist"].getSelection()[0]
 				if self.selectedDir + "\n" in self.booklines:
 					BMtext = _("Remove directory from Bookmarks")
-					BMstring = _("DELLINK")
+					BMstring = "DELLINK"
 				else:
 					BMtext = _("Add directory to Bookmarks")
-					BMstring = _("ADDLINK")
+					BMstring = "ADDLINK"
 				contextDirList = [(_("Cancel"), "NO"),
 						(mftext + _(" Media-filter"), "FILTER"),
 						(_("Sort by name (bouquet+)"), "SORTNAME"),
