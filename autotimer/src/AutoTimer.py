@@ -1008,7 +1008,7 @@ class AutoTimer:
 			log_txt += str(strftime('%d.%m., %H:%M', localtime(timerEntry.begin)))
 			log_txt += ' - ' + timerEntry.service_ref.getServiceName()
 			log_txt += ' - "' + str(timerEntry.name) + '"\n'
-			log_txt += ' > ' + ("   %s (%s)\n") % (timerName, matchTxt) # do not change ' > ' (See parseEPGCallback in plugin.py)
+			log_txt += "     AT: %s (%s)\n" % (timerName, matchTxt) # do not change '     AT:' (See parseEPGCallback in plugin.py)
 			file_search_log.write(log_txt)
 			file_search_log.close()
 
